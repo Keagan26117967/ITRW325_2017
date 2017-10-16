@@ -1,0 +1,9 @@
+c:\users\zander\documents\visual studio 2015\Projects\DSS325\DSS325\bin\Debug\DSS325.exe.config
+c:\users\zander\documents\visual studio 2015\Projects\DSS325\DSS325\bin\Debug\DSS325.exe
+c:\users\zander\documents\visual studio 2015\Projects\DSS325\DSS325\bin\Debug\DSS325.pdb
+c:\users\zander\documents\visual studio 2015\Projects\DSS325\DSS325\obj\Debug\DSS325.csprojResolveAssemblyReference.cache
+c:\users\zander\documents\visual studio 2015\Projects\DSS325\DSS325\obj\Debug\DSS325.Form1.resources
+c:\users\zander\documents\visual studio 2015\Projects\DSS325\DSS325\obj\Debug\DSS325.Properties.Resources.resources
+c:\users\zander\documents\visual studio 2015\Projects\DSS325\DSS325\obj\Debug\DSS325.csproj.GenerateResource.Cache
+c:\users\zander\documents\visual studio 2015\Projects\DSS325\DSS325\obj\Debug\DSS325.exe
+c:\users\zander\documents\visual studio 2015\Projects\DSS325\DSS325\obj\Debug\DSS325.pdb
