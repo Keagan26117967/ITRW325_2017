@@ -22,9 +22,9 @@ namespace DSS325
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            for (int i = 0; i < 13;i++)
+            for (int i = 0; i < 12;i++)
             {
-                MessageBox.Show(Convert.ToString(getRainFall(averageRainFall[i])));
+                MessageBox.Show(Convert.ToString(getRainFall(averageRainFall[i])) + ":  "+ getMonthName(i+1));
             }
             
         }
@@ -74,6 +74,13 @@ namespace DSS325
                     break;      
             }
             return 0;
+        }
+
+        public string getMonthName(int monthNum)
+        {
+            DateTime dtDate = new DateTime(2000, monthNum, 1);
+            string monthFullName = dtDate.ToString("MMMM");
+            return monthFullName;
         }
 
         private double monthRandomizer(int max, int min)
