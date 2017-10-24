@@ -22,11 +22,11 @@ namespace DSS325
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            for (int i = 0; i < 12;i++)
+            for (int i = 0; i < 12; i++)
             {
-                MessageBox.Show(Convert.ToString(getRainFall(averageRainFall[i])) + ":  "+ getMonthName(i+1));
+                MessageBox.Show(Convert.ToString(getRainFall(averageRainFall[i])) + ":  " + getMonthName(i + 1));
             }
-            
+               // MessageBox.Show(Convert.ToString(getRainFall(averageRainFall[i])));
         }
 
         private double getRainFall(int iMonth)

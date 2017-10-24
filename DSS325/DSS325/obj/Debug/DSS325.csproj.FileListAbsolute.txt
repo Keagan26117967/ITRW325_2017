@@ -7,6 +7,7 @@ c:\users\zander\documents\visual studio 2015\Projects\DSS325\DSS325\obj\Debug\DS
 c:\users\zander\documents\visual studio 2015\Projects\DSS325\DSS325\obj\Debug\DSS325.csproj.GenerateResource.Cache
 c:\users\zander\documents\visual studio 2015\Projects\DSS325\DSS325\obj\Debug\DSS325.exe
 c:\users\zander\documents\visual studio 2015\Projects\DSS325\DSS325\obj\Debug\DSS325.pdb
+<<<<<<< Updated upstream
 C:\Users\User\Documents\ITRW325_2017\DSS325\DSS325\bin\Debug\DSS325.exe.config
 C:\Users\User\Documents\ITRW325_2017\DSS325\DSS325\obj\Debug\DSS325.exe
 C:\Users\User\Documents\ITRW325_2017\DSS325\DSS325\obj\Debug\DSS325.pdb
@@ -16,3 +17,14 @@ C:\Users\User\Documents\ITRW325_2017\DSS325\DSS325\obj\Debug\DSS325.csprojResolv
 C:\Users\User\Documents\ITRW325_2017\DSS325\DSS325\obj\Debug\DSS325.Form1.resources
 C:\Users\User\Documents\ITRW325_2017\DSS325\DSS325\obj\Debug\DSS325.Properties.Resources.resources
 C:\Users\User\Documents\ITRW325_2017\DSS325\DSS325\obj\Debug\DSS325.csproj.GenerateResource.Cache
+=======
+C:\Users\Zander\Desktop\ITRW325\ITRW325_2017\DSS325\DSS325\bin\Debug\DSS325.exe.config
+C:\Users\Zander\Desktop\ITRW325\ITRW325_2017\DSS325\DSS325\obj\Debug\DSS325.exe
+C:\Users\Zander\Desktop\ITRW325\ITRW325_2017\DSS325\DSS325\obj\Debug\DSS325.pdb
+C:\Users\Zander\Desktop\ITRW325\ITRW325_2017\DSS325\DSS325\obj\Debug\DSS325.csprojResolveAssemblyReference.cache
+C:\Users\Zander\Desktop\ITRW325\ITRW325_2017\DSS325\DSS325\obj\Debug\DSS325.Form1.resources
+C:\Users\Zander\Desktop\ITRW325\ITRW325_2017\DSS325\DSS325\obj\Debug\DSS325.Properties.Resources.resources
+C:\Users\Zander\Desktop\ITRW325\ITRW325_2017\DSS325\DSS325\obj\Debug\DSS325.csproj.GenerateResource.Cache
+C:\Users\Zander\Desktop\ITRW325\ITRW325_2017\DSS325\DSS325\bin\Debug\DSS325.exe
+C:\Users\Zander\Desktop\ITRW325\ITRW325_2017\DSS325\DSS325\bin\Debug\DSS325.pdb
+>>>>>>> Stashed changes
