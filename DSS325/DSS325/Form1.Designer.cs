@@ -55,13 +55,37 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.pnlWaterPrice = new System.Windows.Forms.Panel();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.lblTier5 = new System.Windows.Forms.Label();
+            this.lblTier4 = new System.Windows.Forms.Label();
+            this.lblTier3 = new System.Windows.Forms.Label();
+            this.lblTier2 = new System.Windows.Forms.Label();
+            this.lblTier1 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.pnlDecision = new System.Windows.Forms.Panel();
+            this.lblPop = new System.Windows.Forms.Label();
+            this.lblCost = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.label29 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.pnlWaterPrice.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.pnlDecision.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.Gray;
             this.tableLayoutPanel1.ColumnCount = 12;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
@@ -99,12 +123,13 @@
             this.tableLayoutPanel1.Controls.Add(this.label3, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 36);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(155, 36);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1145, 80);
+            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1145, 150);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // label24
@@ -112,7 +137,7 @@
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.White;
-            this.label24.Location = new System.Drawing.Point(1048, 40);
+            this.label24.Location = new System.Drawing.Point(1048, 50);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(49, 18);
             this.label24.TabIndex = 24;
@@ -123,7 +148,7 @@
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.Color.White;
-            this.label23.Location = new System.Drawing.Point(953, 40);
+            this.label23.Location = new System.Drawing.Point(953, 50);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(49, 18);
             this.label23.TabIndex = 23;
@@ -134,7 +159,7 @@
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(858, 40);
+            this.label22.Location = new System.Drawing.Point(858, 50);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(49, 18);
             this.label22.TabIndex = 22;
@@ -145,7 +170,7 @@
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(763, 40);
+            this.label21.Location = new System.Drawing.Point(763, 50);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(49, 18);
             this.label21.TabIndex = 21;
@@ -156,7 +181,7 @@
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(668, 40);
+            this.label20.Location = new System.Drawing.Point(668, 50);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(49, 18);
             this.label20.TabIndex = 20;
@@ -167,7 +192,7 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(573, 40);
+            this.label19.Location = new System.Drawing.Point(573, 50);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(49, 18);
             this.label19.TabIndex = 19;
@@ -178,7 +203,7 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(478, 40);
+            this.label18.Location = new System.Drawing.Point(478, 50);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(49, 18);
             this.label18.TabIndex = 18;
@@ -189,7 +214,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(383, 40);
+            this.label17.Location = new System.Drawing.Point(383, 50);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(49, 18);
             this.label17.TabIndex = 17;
@@ -200,7 +225,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(288, 40);
+            this.label16.Location = new System.Drawing.Point(288, 50);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(49, 18);
             this.label16.TabIndex = 16;
@@ -211,7 +236,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(193, 40);
+            this.label15.Location = new System.Drawing.Point(193, 50);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(49, 18);
             this.label15.TabIndex = 15;
@@ -222,7 +247,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(98, 40);
+            this.label14.Location = new System.Drawing.Point(98, 50);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(49, 18);
             this.label14.TabIndex = 14;
@@ -233,7 +258,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(3, 40);
+            this.label13.Location = new System.Drawing.Point(3, 50);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(49, 18);
             this.label13.TabIndex = 13;
@@ -374,10 +399,11 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Location = new System.Drawing.Point(-3, 390);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1201, 53);
+            this.panel1.Size = new System.Drawing.Size(1501, 53);
             this.panel1.TabIndex = 1;
             // 
             // button1
@@ -392,23 +418,249 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // pnlWaterPrice
+            // 
+            this.pnlWaterPrice.BackColor = System.Drawing.Color.Gray;
+            this.pnlWaterPrice.Controls.Add(this.numericUpDown1);
+            this.pnlWaterPrice.Controls.Add(this.lblTier5);
+            this.pnlWaterPrice.Controls.Add(this.lblTier4);
+            this.pnlWaterPrice.Controls.Add(this.lblTier3);
+            this.pnlWaterPrice.Controls.Add(this.lblTier2);
+            this.pnlWaterPrice.Controls.Add(this.lblTier1);
+            this.pnlWaterPrice.Controls.Add(this.label27);
+            this.pnlWaterPrice.Location = new System.Drawing.Point(1306, 36);
+            this.pnlWaterPrice.Name = "pnlWaterPrice";
+            this.pnlWaterPrice.Size = new System.Drawing.Size(166, 348);
+            this.pnlWaterPrice.TabIndex = 3;
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(6, 25);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(134, 20);
+            this.numericUpDown1.TabIndex = 4;
+            this.numericUpDown1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.numericUpDown1_KeyUp);
+            // 
+            // lblTier5
+            // 
+            this.lblTier5.AutoSize = true;
+            this.lblTier5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTier5.ForeColor = System.Drawing.Color.White;
+            this.lblTier5.Location = new System.Drawing.Point(3, 198);
+            this.lblTier5.Name = "lblTier5";
+            this.lblTier5.Size = new System.Drawing.Size(40, 18);
+            this.lblTier5.TabIndex = 10;
+            this.lblTier5.Text = "tier 5";
+            // 
+            // lblTier4
+            // 
+            this.lblTier4.AutoSize = true;
+            this.lblTier4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTier4.ForeColor = System.Drawing.Color.White;
+            this.lblTier4.Location = new System.Drawing.Point(3, 168);
+            this.lblTier4.Name = "lblTier4";
+            this.lblTier4.Size = new System.Drawing.Size(40, 18);
+            this.lblTier4.TabIndex = 9;
+            this.lblTier4.Text = "tier 4";
+            // 
+            // lblTier3
+            // 
+            this.lblTier3.AutoSize = true;
+            this.lblTier3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTier3.ForeColor = System.Drawing.Color.White;
+            this.lblTier3.Location = new System.Drawing.Point(3, 138);
+            this.lblTier3.Name = "lblTier3";
+            this.lblTier3.Size = new System.Drawing.Size(40, 18);
+            this.lblTier3.TabIndex = 8;
+            this.lblTier3.Text = "tier 3";
+            // 
+            // lblTier2
+            // 
+            this.lblTier2.AutoSize = true;
+            this.lblTier2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTier2.ForeColor = System.Drawing.Color.White;
+            this.lblTier2.Location = new System.Drawing.Point(3, 108);
+            this.lblTier2.Name = "lblTier2";
+            this.lblTier2.Size = new System.Drawing.Size(40, 18);
+            this.lblTier2.TabIndex = 7;
+            this.lblTier2.Text = "tier 2";
+            // 
+            // lblTier1
+            // 
+            this.lblTier1.AutoSize = true;
+            this.lblTier1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTier1.ForeColor = System.Drawing.Color.White;
+            this.lblTier1.Location = new System.Drawing.Point(3, 78);
+            this.lblTier1.Name = "lblTier1";
+            this.lblTier1.Size = new System.Drawing.Size(40, 18);
+            this.lblTier1.TabIndex = 6;
+            this.lblTier1.Text = "tier 1";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.White;
+            this.label27.Location = new System.Drawing.Point(3, 6);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(137, 16);
+            this.label27.TabIndex = 5;
+            this.label27.Text = "Percentile Adjustment";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.White;
+            this.label26.Location = new System.Drawing.Point(1302, 13);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(166, 20);
+            this.label26.TabIndex = 3;
+            this.label26.Text = "Adjusted Water Prices";
+            // 
             // label25
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.Color.White;
-            this.label25.Location = new System.Drawing.Point(9, 9);
+            this.label25.Location = new System.Drawing.Point(-4, 86);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(133, 20);
             this.label25.TabIndex = 2;
             this.label25.Text = "Predicted Rainfall";
             // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.Color.White;
+            this.label28.Location = new System.Drawing.Point(-4, 142);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(119, 20);
+            this.label28.TabIndex = 4;
+            this.label28.Text = "Avg. Dam Level";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(1300, -2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(30, 490);
+            this.button2.TabIndex = 5;
+            this.button2.Text = ">";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(1478, -2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(30, 490);
+            this.button3.TabIndex = 6;
+            this.button3.Text = "<";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(128, 0);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(128, 53);
+            this.button4.TabIndex = 1;
+            this.button4.Text = "Decision Analysis";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // pnlDecision
+            // 
+            this.pnlDecision.BackColor = System.Drawing.Color.Gray;
+            this.pnlDecision.Controls.Add(this.label29);
+            this.pnlDecision.Controls.Add(this.numericUpDown2);
+            this.pnlDecision.Controls.Add(this.label31);
+            this.pnlDecision.Controls.Add(this.lblCost);
+            this.pnlDecision.Controls.Add(this.lblPop);
+            this.pnlDecision.Location = new System.Drawing.Point(155, 192);
+            this.pnlDecision.Name = "pnlDecision";
+            this.pnlDecision.Size = new System.Drawing.Size(666, 192);
+            this.pnlDecision.TabIndex = 7;
+            // 
+            // lblPop
+            // 
+            this.lblPop.AutoSize = true;
+            this.lblPop.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPop.Location = new System.Drawing.Point(12, 12);
+            this.lblPop.Name = "lblPop";
+            this.lblPop.Size = new System.Drawing.Size(82, 18);
+            this.lblPop.TabIndex = 0;
+            this.lblPop.Text = "Population:";
+            // 
+            // lblCost
+            // 
+            this.lblCost.AutoSize = true;
+            this.lblCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCost.Location = new System.Drawing.Point(12, 42);
+            this.lblCost.Name = "lblCost";
+            this.lblCost.Size = new System.Drawing.Size(112, 18);
+            this.lblCost.TabIndex = 1;
+            this.lblCost.Text = "Cost(per Hour):";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(3, 144);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(41, 13);
+            this.label31.TabIndex = 2;
+            this.label31.Text = "Budget";
+            // 
+            // numericUpDown2
+            // 
+            this.numericUpDown2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown2.Location = new System.Drawing.Point(6, 160);
+            this.numericUpDown2.Maximum = new decimal(new int[] {
+            -727379969,
+            232,
+            0,
+            0});
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(120, 24);
+            this.numericUpDown2.TabIndex = 3;
+            this.numericUpDown2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.numericUpDown2_KeyUp);
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(132, 162);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(0, 18);
+            this.label29.TabIndex = 4;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GrayText;
-            this.ClientSize = new System.Drawing.Size(1169, 441);
+            this.BackColor = System.Drawing.Color.DimGray;
+            this.ClientSize = new System.Drawing.Size(1324, 441);
+            this.Controls.Add(this.pnlDecision);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label28);
+            this.Controls.Add(this.label26);
+            this.Controls.Add(this.pnlWaterPrice);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -420,6 +672,12 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.pnlWaterPrice.ResumeLayout(false);
+            this.pnlWaterPrice.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            this.pnlDecision.ResumeLayout(false);
+            this.pnlDecision.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -454,7 +712,26 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel pnlWaterPrice;
+        private System.Windows.Forms.Label lblTier5;
+        private System.Windows.Forms.Label lblTier4;
+        private System.Windows.Forms.Label lblTier3;
+        private System.Windows.Forms.Label lblTier2;
+        private System.Windows.Forms.Label lblTier1;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Panel pnlDecision;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label lblCost;
+        private System.Windows.Forms.Label lblPop;
+        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.Label label29;
     }
 }
 
