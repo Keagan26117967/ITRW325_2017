@@ -31,6 +31,7 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
@@ -74,19 +75,19 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.pnlDecision = new System.Windows.Forms.Panel();
+            this.predictedChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label29 = new System.Windows.Forms.Label();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.label31 = new System.Windows.Forms.Label();
             this.lblCost = new System.Windows.Forms.Label();
             this.lblPop = new System.Windows.Forms.Label();
-            this.predictedChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.pnlWaterPrice.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.pnlDecision.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.predictedChart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -660,6 +661,26 @@
             this.pnlDecision.Size = new System.Drawing.Size(888, 236);
             this.pnlDecision.TabIndex = 7;
             // 
+            // predictedChart
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.predictedChart.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.predictedChart.Legends.Add(legend1);
+            this.predictedChart.Location = new System.Drawing.Point(305, 7);
+            this.predictedChart.Name = "predictedChart";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.predictedChart.Series.Add(series1);
+            this.predictedChart.Size = new System.Drawing.Size(564, 226);
+            this.predictedChart.TabIndex = 8;
+            this.predictedChart.Text = "chart1";
+            title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            title1.Name = "Title1";
+            title1.Text = "Predicted Rainfall";
+            this.predictedChart.Titles.Add(title1);
+            // 
             // label29
             // 
             this.label29.AutoSize = true;
@@ -717,22 +738,6 @@
             this.lblPop.TabIndex = 0;
             this.lblPop.Text = "Population:";
             // 
-            // predictedChart
-            // 
-            chartArea1.Name = "ChartArea1";
-            this.predictedChart.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.predictedChart.Legends.Add(legend1);
-            this.predictedChart.Location = new System.Drawing.Point(305, 7);
-            this.predictedChart.Name = "predictedChart";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.predictedChart.Series.Add(series1);
-            this.predictedChart.Size = new System.Drawing.Size(564, 226);
-            this.predictedChart.TabIndex = 8;
-            this.predictedChart.Text = "chart1";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -762,8 +767,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.pnlDecision.ResumeLayout(false);
             this.pnlDecision.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.predictedChart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

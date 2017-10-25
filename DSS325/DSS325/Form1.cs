@@ -200,13 +200,13 @@ namespace DSS325
                 twelveAvg[i] = Math.Round(avgRain[i + 1]/100000,2);
             }
 
-            ChartArea first = new ChartArea("Predicted Rainfall");
+            ChartArea first = new ChartArea("Predicted_Rainfall");
+           
             first.AxisX.Title = "Months Of Year";
             first.AxisY.Title = "mm";
             first.AxisX.MajorGrid.LineWidth = 0;
             first.AxisY.MajorGrid.LineWidth = 0;
-           
-            first.BackGradientStyle = GradientStyle.DiagonalLeft;
+
             predictedChart.ChartAreas[0] = first;
             Series barSeries = new Series();
             barSeries.Points.DataBindXY(months, twelveAvg);
