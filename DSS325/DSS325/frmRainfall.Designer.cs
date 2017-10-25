@@ -64,6 +64,7 @@
             this.btnDBV.TabIndex = 4;
             this.btnDBV.Text = "Calculate MIN and MAX";
             this.btnDBV.UseVisualStyleBackColor = true;
+            this.btnDBV.Click += new System.EventHandler(this.btnDBV_Click);
             // 
             // frmRainfall
             // 
