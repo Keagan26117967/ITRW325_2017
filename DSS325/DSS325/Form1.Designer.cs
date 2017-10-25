@@ -130,7 +130,7 @@
             this.tableLayoutPanel1.Controls.Add(this.label2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(207, 44);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62F));
@@ -434,7 +434,7 @@
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Location = new System.Drawing.Point(-4, 480);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(2001, 65);
             this.panel1.TabIndex = 1;
@@ -444,7 +444,7 @@
             this.btnDBV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDBV.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDBV.Location = new System.Drawing.Point(337, 0);
-            this.btnDBV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDBV.Margin = new System.Windows.Forms.Padding(4);
             this.btnDBV.Name = "btnDBV";
             this.btnDBV.Size = new System.Drawing.Size(171, 65);
             this.btnDBV.TabIndex = 2;
@@ -457,7 +457,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(171, 0);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(171, 65);
             this.button4.TabIndex = 1;
@@ -470,7 +470,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(4, 0);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(171, 65);
             this.button1.TabIndex = 0;
@@ -489,7 +489,7 @@
             this.pnlWaterPrice.Controls.Add(this.lblTier1);
             this.pnlWaterPrice.Controls.Add(this.label27);
             this.pnlWaterPrice.Location = new System.Drawing.Point(1741, 44);
-            this.pnlWaterPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlWaterPrice.Margin = new System.Windows.Forms.Padding(4);
             this.pnlWaterPrice.Name = "pnlWaterPrice";
             this.pnlWaterPrice.Size = new System.Drawing.Size(221, 428);
             this.pnlWaterPrice.TabIndex = 3;
@@ -497,7 +497,7 @@
             // numericUpDown1
             // 
             this.numericUpDown1.Location = new System.Drawing.Point(8, 31);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -623,7 +623,7 @@
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(1733, -2);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(40, 603);
             this.button2.TabIndex = 5;
@@ -637,7 +637,7 @@
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(1971, -2);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(40, 603);
             this.button3.TabIndex = 6;
@@ -648,13 +648,14 @@
             // pnlDecision
             // 
             this.pnlDecision.BackColor = System.Drawing.Color.Gray;
+            this.pnlDecision.Controls.Add(this.predictedChart);
             this.pnlDecision.Controls.Add(this.label29);
             this.pnlDecision.Controls.Add(this.numericUpDown2);
             this.pnlDecision.Controls.Add(this.label31);
             this.pnlDecision.Controls.Add(this.lblCost);
             this.pnlDecision.Controls.Add(this.lblPop);
             this.pnlDecision.Location = new System.Drawing.Point(207, 236);
-            this.pnlDecision.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlDecision.Margin = new System.Windows.Forms.Padding(4);
             this.pnlDecision.Name = "pnlDecision";
             this.pnlDecision.Size = new System.Drawing.Size(888, 236);
             this.pnlDecision.TabIndex = 7;
@@ -673,7 +674,7 @@
             // 
             this.numericUpDown2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericUpDown2.Location = new System.Drawing.Point(8, 197);
-            this.numericUpDown2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDown2.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             -727379969,
             232,
@@ -722,13 +723,13 @@
             this.predictedChart.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.predictedChart.Legends.Add(legend1);
-            this.predictedChart.Location = new System.Drawing.Point(1143, 236);
+            this.predictedChart.Location = new System.Drawing.Point(305, 7);
             this.predictedChart.Name = "predictedChart";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.predictedChart.Series.Add(series1);
-            this.predictedChart.Size = new System.Drawing.Size(564, 236);
+            this.predictedChart.Size = new System.Drawing.Size(564, 226);
             this.predictedChart.TabIndex = 8;
             this.predictedChart.Text = "chart1";
             // 
@@ -738,7 +739,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(1765, 543);
-            this.Controls.Add(this.predictedChart);
             this.Controls.Add(this.pnlDecision);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -749,7 +749,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
