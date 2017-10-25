@@ -280,6 +280,7 @@
             this.txtAlpha.Name = "txtAlpha";
             this.txtAlpha.Size = new System.Drawing.Size(62, 20);
             this.txtAlpha.TabIndex = 10;
+            this.txtAlpha.TextChanged += new System.EventHandler(this.txtAlpha_TextChanged);
             // 
             // val
             // 

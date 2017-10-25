@@ -51,14 +51,19 @@ namespace HydroCT
 
         public decimal ExponentialSmoothing(Decimal[] values, decimal Alpha)
         {
-            Decimal[] forcasted = new Decimal[values.Count()];
+            Decimal[] forcasted = new Decimal[values.Count()+1];
+
+     
+
+
             forcasted[0] = values[0];
-            for(int i=1; i<values.Count();i++)
+            for(int i=1; i<=values.Count();i++)
             {
                 forcasted[i] = forcasted[i - 1] + Alpha * (values[i - 1] - forcasted[i - 1]);
+
             }
 
-            return forcasted[values.Count() - 1] + Alpha * (values[values.Count() - 1] - forcasted[values.Count() - 1]);
+            return forcasted[values.Count() - 2] + Alpha * (values[values.Count() - 2] - forcasted[values.Count() - 2]);
         }
 
       

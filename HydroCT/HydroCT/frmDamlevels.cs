@@ -86,6 +86,11 @@ namespace HydroCT
             setArrays();
         }
 
+        private void txtAlpha_TextChanged(object sender, EventArgs e)
+        {
+                txtAlpha.Text.Replace('.', ',');
+        }
+
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cbxDams.SelectedIndex == 0)
@@ -114,8 +119,8 @@ namespace HydroCT
                 Dam = "Wemmerhoek";
             else if (cbxDams.SelectedIndex == 12)
                 Dam = "Woodhead";
-
-
+            cbxFmethod.SelectedIndex = 0;
+            dgvForcasted.Columns.Clear();          
             RefreshDb();
             sedNrPeriods.Maximum = dgvDamLevels.ColumnCount - 2 ;
 
@@ -177,8 +182,8 @@ namespace HydroCT
                 August[i] = Convert.ToDecimal(dgvDamLevels[i+1, 7].Value);
                 September[i] = Convert.ToDecimal(dgvDamLevels[i+1, 8].Value);
                 October[i] = Convert.ToDecimal(dgvDamLevels[i+1, 9].Value);
-                //   November[i] = Convert.ToDecimal(dgvDamLevels[i, 10].Value);
-                //  December[i] = Convert.ToDecimal(dgvDamLevels[i, 11].Value);
+                November[i] = Convert.ToDecimal(dgvDamLevels[i+1, 10].Value);
+                December[i] = Convert.ToDecimal(dgvDamLevels[i+1, 11].Value);
             }
         }
         private void btnForcast_Click(object sender, EventArgs e)
@@ -194,6 +199,38 @@ namespace HydroCT
                 setArrays();
                 DoWMA();
             }
+            if (cbxFmethod.SelectedIndex == 2)
+            {
+                setArrays();
+                if (Convert.ToDecimal(txtAlpha.Text)>=0&& Convert.ToDecimal(txtAlpha.Text) <= 1)
+                DoES();
+                else
+                {
+                    MessageBox.Show("Please make sure Alpha is between 0 and 1", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
+        }
+
+        private void DoES()
+        {
+            int newName = Convert.ToInt32(dgvDamLevels.Columns[dgvDamLevels.ColumnCount - 1].Name) + 1;
+            dgvForcasted.Columns.Add(newName.ToString(), newName.ToString());
+            double alpha1 = Convert.ToDouble(txtAlpha.Text);
+            decimal alpha = Convert.ToDecimal(alpha1);
+            dgvForcasted.Rows.Add(casting.ExponentialSmoothing(January, alpha));
+            dgvForcasted.Rows.Add(casting.ExponentialSmoothing(February, alpha));
+            dgvForcasted.Rows.Add(casting.ExponentialSmoothing(March, alpha));
+            dgvForcasted.Rows.Add(casting.ExponentialSmoothing(April, alpha));
+            dgvForcasted.Rows.Add(casting.ExponentialSmoothing(May, alpha));
+            dgvForcasted.Rows.Add(casting.ExponentialSmoothing(June, alpha));
+            dgvForcasted.Rows.Add(casting.ExponentialSmoothing(July, alpha));
+            dgvForcasted.Rows.Add(casting.ExponentialSmoothing(August, alpha));
+            dgvForcasted.Rows.Add(casting.ExponentialSmoothing(September, alpha));
+            dgvForcasted.Rows.Add(casting.ExponentialSmoothing(October, alpha));
+            dgvForcasted.Rows.Add(casting.ExponentialSmoothing(November, alpha));
+            dgvForcasted.Rows.Add(casting.ExponentialSmoothing(December, alpha));
+
 
         }
 
