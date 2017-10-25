@@ -102,6 +102,88 @@ namespace DSS325
             return water;
         }
 
+        public double avgDamLevel(int month)
+        {
+            int i = 0;
+            double[] Alex = new double[12] { 51.936559139785, 43.9481141614881, 33.5942555245, 31.7678809526667, 33.4877648462366, 49.2138498041111, 60.0485434391935, 70.2780997543548, 72.4968133877778, 66.5739314644205, 61.16, 52.32193548};
+            double[] Berg = new double[12] { 77.26666667, 67.69886134, 59.0718998, 55.59075815, 56.3875529, 63.76491334, 73.47886928, 83.65428677, 87.21160586, 87.66466682, 90.452, 84.64193548 };
+            double[] Vil = new double[12] {76.95537634, 60.5872089, 58.40920252, 58.24191106, 61.42070929, 71.84358318, 85.47122461, 92.91024611, 94.70129399, 91.57749507, 84.78866667, 82.28580645 };
+            double[] Hely = new double[12] {85.5016129, 65.98049348, 39.15179044, 34.84521972, 36.59881693, 65.84147724, 95.7554962, 100.4672319, 100.2137935, 96.70602174, 87.23933333, 86.72258065 };
+            double[] Klein = new double[12] { 56.4, 48.19378146, 41.52850967, 37.24107514, 35.34222931, 44.71845097, 62.26840739, 82.70533931, 90.7623578, 88.80257721, 85.804, 74.14193548 };
+            double[] Levis = new double[12] { 66.3983871, 58.46162327, 46.66296723, 37.15251323, 38.26804916, 57.75398148, 81.49420123, 99.05107527, 95.0689418, 90.35729015, 84.988, 84.25096774 };
+            double[] SteenLow = new double[12] { 61.68870968, 55.17161991, 48.45494108, 44.04352905, 41.02360301, 49.1332283, 62.56316076, 79.56263583, 83.65612099, 80.70645123, 80.82466667, 70.3 };
+            double[] SteenUp = new double[12] { 87.8327957, 82.02660094, 72.94265983, 62.97478612, 60.52195174, 68.83005775, 85.85608249, 99.09723807, 98.76325673, 98.34836482, 93.99333333, 88.89354839 };
+            double[] ThreeWater = new double[12] { 69.94731183, 62.12617905, 55.0824878, 50.40342871, 48.28297476, 54.4699799, 62.73517088, 72.38667191, 77.19206592, 76.72086641, 83.58133333, 77.65419355 };
+            double[] Victoria = new double[12] { 69.01236559, 61.26276875, 38.79799936, 35.47717117, 29.05367384, 48.6173226, 75.56557884, 92.9439043, 97.50989616, 99.95765842, 97.80866667, 93.4083871 };
+            double[] Voel = new double[12] { 64.29892473, 55.60025555, 47.65978321, 41.75214623, 38.95021473, 43.66434821, 55.38118127, 67.05727752, 74.00500863, 73.70284138, 78.87866667, 71.5483871 };
+            double[] Wemmer = new double[12] { 69.02634409, 63.7542806, 58.21686854, 54.02439613, 51.1493983, 57.66050588, 67.0536531, 76.6280084, 80.8421198, 78.5468142, 80.40066667, 74.8116129 };
+            double[] Wood = new double[12] { 74.5844086, 69.41653711, 69.29247509, 68.35572364, 63.40346031, 69.70357996, 80.66510275, 95.68117131, 90.23262808, 80.25521223, 80.42, 80.90774194 };
+
+            switch (month)
+            {
+                case 1:
+                    i = 0;
+                    List<double> Jan = new List<double> { Alex[i], Berg[i], Vil[i], Hely[i], Klein[i], Levis[i], SteenLow[i], SteenUp[i], ThreeWater[i], Victoria[i], Voel[i], Wemmer[i], Wood[i] };
+                    return Jan.Average();                               //January
+                    break;
+                case 2:
+                    i = 1;
+                    List<double> Feb = new List<double> { Alex[i], Berg[i], Vil[i], Hely[i], Klein[i], Levis[i], SteenLow[i], SteenUp[i], ThreeWater[i], Victoria[i], Voel[i], Wemmer[i], Wood[i] };
+                    return Feb.Average();          //February
+                    break;
+                case 3:
+                    i = 2;
+                    List<double> Mar = new List<double> { Alex[i], Berg[i], Vil[i], Hely[i], Klein[i], Levis[i], SteenLow[i], SteenUp[i], ThreeWater[i], Victoria[i], Voel[i], Wemmer[i], Wood[i] };
+                    return Mar.Average();          //March
+                    break;
+                case 4:
+                    i = 3;
+                    List<double> Apr = new List<double> { Alex[i], Berg[i], Vil[i], Hely[i], Klein[i], Levis[i], SteenLow[i], SteenUp[i], ThreeWater[i], Victoria[i], Voel[i], Wemmer[i], Wood[i] };
+                    return Apr.Average();          //April
+                    break;
+                case 5:
+                    i = 4;
+                    List<double> May = new List<double> { Alex[i], Berg[i], Vil[i], Hely[i], Klein[i], Levis[i], SteenLow[i], SteenUp[i], ThreeWater[i], Victoria[i], Voel[i], Wemmer[i], Wood[i] };
+                    return May.Average();        //May
+                    break;
+                case 6:
+                    i = 5;
+                    List<double> Jun = new List<double> { Alex[i], Berg[i], Vil[i], Hely[i], Klein[i], Levis[i], SteenLow[i], SteenUp[i], ThreeWater[i], Victoria[i], Voel[i], Wemmer[i], Wood[i] };
+                    return Jun.Average();       //June
+                    break;
+                case 7:
+                    i = 6;
+                    List<double> Jul = new List<double> { Alex[i], Berg[i], Vil[i], Hely[i], Klein[i], Levis[i], SteenLow[i], SteenUp[i], ThreeWater[i], Victoria[i], Voel[i], Wemmer[i], Wood[i] };
+                    return Jul.Average();        //July
+                    break;
+                case 8:
+                    i = 7;
+                    List<double> Aug = new List<double> { Alex[i], Berg[i], Vil[i], Hely[i], Klein[i], Levis[i], SteenLow[i], SteenUp[i], ThreeWater[i], Victoria[i], Voel[i], Wemmer[i], Wood[i] };
+                    return Aug.Average();        //August   
+                    break;
+                case 9:
+                    List<double> Sep = new List<double> { Alex[i], Berg[i], Vil[i], Hely[i], Klein[i], Levis[i], SteenLow[i], SteenUp[i], ThreeWater[i], Victoria[i], Voel[i], Wemmer[i], Wood[i] };
+                    return Sep.Average();         //September
+                    break;
+                case 10:
+                    i = 9;
+                    List<double> Oct = new List<double> { Alex[i], Berg[i], Vil[i], Hely[i], Klein[i], Levis[i], SteenLow[i], SteenUp[i], ThreeWater[i], Victoria[i], Voel[i], Wemmer[i], Wood[i] };
+                    return Oct.Average();          //October
+                    break;
+                case 11:
+                    i = 10;
+                    List<double> Nov = new List<double> { Alex[i], Berg[i], Vil[i], Hely[i], Klein[i], Levis[i], SteenLow[i], SteenUp[i], ThreeWater[i], Victoria[i], Voel[i], Wemmer[i], Wood[i] };
+                    return Nov.Average();          //November  
+                    break;
+                case 12:
+                    i = 11;
+                    List<double> Dec = new List<double> { Alex[i], Berg[i], Vil[i], Hely[i], Klein[i], Levis[i], SteenLow[i], SteenUp[i], ThreeWater[i], Victoria[i], Voel[i], Wemmer[i], Wood[i] };
+                    return Dec.Average();          //December          
+                    break;
+            }
+           return 0;
+        }
+
 
 
         /*
