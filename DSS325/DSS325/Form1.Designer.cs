@@ -54,6 +54,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnDBV = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pnlWaterPrice = new System.Windows.Forms.Panel();
@@ -75,7 +76,6 @@
             this.label31 = new System.Windows.Forms.Label();
             this.lblCost = new System.Windows.Forms.Label();
             this.lblPop = new System.Windows.Forms.Label();
-            this.btnDBV = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.pnlWaterPrice.SuspendLayout();
@@ -408,6 +408,18 @@
             this.panel1.Size = new System.Drawing.Size(1501, 53);
             this.panel1.TabIndex = 1;
             // 
+            // btnDBV
+            // 
+            this.btnDBV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDBV.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDBV.Location = new System.Drawing.Point(253, 0);
+            this.btnDBV.Name = "btnDBV";
+            this.btnDBV.Size = new System.Drawing.Size(128, 53);
+            this.btnDBV.TabIndex = 2;
+            this.btnDBV.Text = "DB Viewer";
+            this.btnDBV.UseVisualStyleBackColor = true;
+            this.btnDBV.Click += new System.EventHandler(this.btnDBV_Click);
+            // 
             // button4
             // 
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -650,18 +662,6 @@
             this.lblPop.Size = new System.Drawing.Size(82, 18);
             this.lblPop.TabIndex = 0;
             this.lblPop.Text = "Population:";
-            // 
-            // btnDBV
-            // 
-            this.btnDBV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDBV.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDBV.Location = new System.Drawing.Point(253, 0);
-            this.btnDBV.Name = "btnDBV";
-            this.btnDBV.Size = new System.Drawing.Size(128, 53);
-            this.btnDBV.TabIndex = 2;
-            this.btnDBV.Text = "DB Viewer";
-            this.btnDBV.UseVisualStyleBackColor = true;
-            this.btnDBV.Click += new System.EventHandler(this.btnDBV_Click);
             // 
             // Form1
             // 

@@ -15,6 +15,7 @@ namespace DSS325
         private int[] averageRainFall;
         public int[] maxRainFall;
         public int[] minRainFall;
+        public double[] avgRain;
         private double[] waterPrices;
         private bool decA = false;
         private double cost, pumpWater;
@@ -28,6 +29,7 @@ namespace DSS325
             minRainFall = new int[12];
             maxRainFall = new int[12];
             waterPrices = new double[5];
+            avgRain = new double[13] { 0 ,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
         }
 
         /*
@@ -180,7 +182,12 @@ namespace DSS325
         {
             for (int i = 0; i < 13; i++)
             {
-                intToLabel(i).Text = (Convert.ToString(getRainFall(i)) + " " + "mm");
+                avgRain[i] = 0;
+                for (int u = 0; u < 250; u++)           //Use AvgRain[] for your data Vorster
+                {
+                    avgRain[i] = avgRain[i] + getRainFall(i);
+                }   
+                intToLabel(i).Text = (Convert.ToString(Math.Round(avgRain[i]/ 250, 2)) + " " + "mm");
             }
         }
 
