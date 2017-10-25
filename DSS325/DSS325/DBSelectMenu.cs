@@ -54,17 +54,17 @@ namespace DSS325
 
         private void btnDams_Click(object sender, EventArgs e)
         {
-            //if (Filepath == "")
-            //{
-            //    MessageBox.Show("Please Select Data Source", "Select Data Source", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //    selectDataSource();
-            //}
-            //else
-            //{
-            //    frmDamLevels damlevels = new frmDamLevels(Filepath);
-            //    damlevels.Show();
-            //    this.Hide();
-            //}
+            if (Filepath == "")
+            {
+                MessageBox.Show("Please Select Data Source", "Select Data Source", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                selectDataSource();
+            }
+            else
+            {
+                frmDamLevels damlevels = new frmDamLevels(Filepath);
+                damlevels.Show();
+                this.Hide();
+            }
         }
     }
 }

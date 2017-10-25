@@ -30,10 +30,11 @@
         {
             this.btnDBV = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dgvRainfall = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblDamInfo = new System.Windows.Forms.Label();
+            this.dgvDamLevels = new System.Windows.Forms.DataGridView();
+            this.cbxDams = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRainfall)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDamLevels)).BeginInit();
             this.SuspendLayout();
             // 
             // btnDBV
@@ -49,8 +50,9 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.dgvRainfall);
+            this.groupBox1.Controls.Add(this.cbxDams);
+            this.groupBox1.Controls.Add(this.lblDamInfo);
+            this.groupBox1.Controls.Add(this.dgvDamLevels);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1027, 486);
@@ -58,22 +60,30 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Rainfall for Cape Town in -mm-";
             // 
-            // dgvRainfall
+            // lblDamInfo
             // 
-            this.dgvRainfall.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRainfall.Location = new System.Drawing.Point(12, 57);
-            this.dgvRainfall.Name = "dgvRainfall";
-            this.dgvRainfall.Size = new System.Drawing.Size(1002, 414);
-            this.dgvRainfall.TabIndex = 0;
+            this.lblDamInfo.AutoSize = true;
+            this.lblDamInfo.Location = new System.Drawing.Point(18, 29);
+            this.lblDamInfo.Name = "lblDamInfo";
+            this.lblDamInfo.Size = new System.Drawing.Size(65, 13);
+            this.lblDamInfo.TabIndex = 1;
+            this.lblDamInfo.Text = "Select Dam:";
             // 
-            // label1
+            // dgvDamLevels
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.dgvDamLevels.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDamLevels.Location = new System.Drawing.Point(12, 57);
+            this.dgvDamLevels.Name = "dgvDamLevels";
+            this.dgvDamLevels.Size = new System.Drawing.Size(1002, 414);
+            this.dgvDamLevels.TabIndex = 0;
+            // 
+            // cbxDams
+            // 
+            this.cbxDams.FormattingEnabled = true;
+            this.cbxDams.Location = new System.Drawing.Point(89, 26);
+            this.cbxDams.Name = "cbxDams";
+            this.cbxDams.Size = new System.Drawing.Size(187, 21);
+            this.cbxDams.TabIndex = 2;
             // 
             // frmDamLevels
             // 
@@ -86,7 +96,7 @@
             this.Text = "frmDamLevels";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRainfall)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDamLevels)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -95,7 +105,8 @@
 
         private System.Windows.Forms.Button btnDBV;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dgvRainfall;
+        private System.Windows.Forms.Label lblDamInfo;
+        private System.Windows.Forms.DataGridView dgvDamLevels;
+        private System.Windows.Forms.ComboBox cbxDams;
     }
 }
