@@ -47,10 +47,7 @@ namespace DSS325
             //Filepath = open.FileName;
         }
 
-        private void btnSelectDB_Click(object sender, EventArgs e)
-        {
-            //selectDataSource();
-        }
+        
 
         private void btnDams_Click(object sender, EventArgs e)
         {

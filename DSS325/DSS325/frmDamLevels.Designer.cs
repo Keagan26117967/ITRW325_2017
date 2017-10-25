@@ -64,10 +64,25 @@
             // cbxDams
             // 
             this.cbxDams.FormattingEnabled = true;
+            this.cbxDams.Items.AddRange(new object[] {
+            "ALEXANDRA",
+            "BERG RIVER",
+            "DE VILLIERS",
+            "HELY-HUTCHENSON",
+            "KLEINPLAATS",
+            "LEWIS GAY",
+            "STEENBRAS LOWER",
+            "STEENBRAS UPPER",
+            "THEEWATERKLOOF",
+            "VICTORIA",
+            "VOëLVLEI",
+            "WEMMERHOEK",
+            "WOODHEAD"});
             this.cbxDams.Location = new System.Drawing.Point(89, 26);
             this.cbxDams.Name = "cbxDams";
             this.cbxDams.Size = new System.Drawing.Size(187, 21);
             this.cbxDams.TabIndex = 2;
+            this.cbxDams.SelectedIndexChanged += new System.EventHandler(this.cbxDams_SelectedIndexChanged);
             // 
             // lblDamInfo
             // 
