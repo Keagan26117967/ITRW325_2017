@@ -182,15 +182,50 @@ namespace DSS325
          */
         private void estimateTable()
         {
-            for (int i = 0; i < 13; i++)
+            for (int i = 1; i < 13; i++)
             {
                 avgRain[i] = 0;
-                for (int u = 0; u < 250; u++)           //Use AvgRain[] for your data Vorster
+                for (int u = 0; u < 100000; u++)           //Use AvgRain[] for your data Vorster
                 {
                     avgRain[i] = avgRain[i] + getRainFall(i);
                 }   
-                intToLabel(i).Text = (Convert.ToString(Math.Round(avgRain[i]/ 250, 2)) + " " + "mm");
+                intToLabel(i).Text = (Convert.ToString(Math.Round(avgRain[i]/ 100000, 2)) + " " + "mm");
             }
+
+            //Drawing chart
+            string[] months = { "JAN", "FEB", "MAR", "APR", "", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "DEC" };
+            double[] twelveAvg = new double[12]; //A version of avgRainfall with 12 spaces instead of 13
+            for (int i = 0; i < 12; i++)
+            {
+                twelveAvg[i] = Math.Round(avgRain[i + 1]/100000,2);
+            }
+
+            ChartArea first = new ChartArea("Predicted Rainfall");
+            first.AxisX.Title = "Months Of Year";
+            first.AxisY.Title = "mm";
+            first.AxisX.MajorGrid.LineWidth = 0;
+            first.AxisY.MajorGrid.LineWidth = 0;
+           
+            first.BackGradientStyle = GradientStyle.DiagonalLeft;
+            predictedChart.ChartAreas[0] = first;
+            Series barSeries = new Series();
+            barSeries.Points.DataBindXY(months, twelveAvg);
+
+            barSeries.ChartType = SeriesChartType.Column;
+            barSeries.Name = "Predicted Rainfall";
+
+            predictedChart.Series[0] = (barSeries);
+            predictedChart.Series[0].Points.FindMaxByValue().Color = Color.Blue;
+            predictedChart.Series[0].Points.FindMinByValue().Color = Color.Red;
+            predictedChart.Dock = DockStyle.Fill;
+
+            foreach (DataPoint item in predictedChart.Series[0].Points)
+            {
+                double[] values = item.YValues;
+                double value = values[0];
+                item.Label = Convert.ToString(value);
+            }
+
         }
 
         /*
