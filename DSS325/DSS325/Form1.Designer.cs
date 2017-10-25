@@ -28,11 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
@@ -57,7 +68,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
             this.btnDBV = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -69,30 +82,16 @@
             this.lblTier2 = new System.Windows.Forms.Label();
             this.lblTier1 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.label26 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.pnlDecision = new System.Windows.Forms.Panel();
+            this.label31 = new System.Windows.Forms.Label();
             this.predictedChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label29 = new System.Windows.Forms.Label();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.label31 = new System.Windows.Forms.Label();
-            this.lblCost = new System.Windows.Forms.Label();
-            this.lblPop = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.pnlWaterPrice.SuspendLayout();
@@ -162,6 +161,127 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1145, 150);
             this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.label42.ForeColor = System.Drawing.Color.White;
+            this.label42.Location = new System.Drawing.Point(1048, 100);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(54, 18);
+            this.label42.TabIndex = 36;
+            this.label42.Text = "label42";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.label41.ForeColor = System.Drawing.Color.White;
+            this.label41.Location = new System.Drawing.Point(953, 100);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(54, 18);
+            this.label41.TabIndex = 35;
+            this.label41.Text = "label41";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.label40.ForeColor = System.Drawing.Color.White;
+            this.label40.Location = new System.Drawing.Point(858, 100);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(54, 18);
+            this.label40.TabIndex = 34;
+            this.label40.Text = "label40";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.label39.ForeColor = System.Drawing.Color.White;
+            this.label39.Location = new System.Drawing.Point(763, 100);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(54, 18);
+            this.label39.TabIndex = 33;
+            this.label39.Text = "label39";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.label38.ForeColor = System.Drawing.Color.White;
+            this.label38.Location = new System.Drawing.Point(668, 100);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(54, 18);
+            this.label38.TabIndex = 32;
+            this.label38.Text = "label38";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.label37.ForeColor = System.Drawing.Color.White;
+            this.label37.Location = new System.Drawing.Point(573, 100);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(54, 18);
+            this.label37.TabIndex = 31;
+            this.label37.Text = "label37";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.label36.ForeColor = System.Drawing.Color.White;
+            this.label36.Location = new System.Drawing.Point(478, 100);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(54, 18);
+            this.label36.TabIndex = 30;
+            this.label36.Text = "label36";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.label35.ForeColor = System.Drawing.Color.White;
+            this.label35.Location = new System.Drawing.Point(383, 100);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(54, 18);
+            this.label35.TabIndex = 29;
+            this.label35.Text = "label35";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.label34.ForeColor = System.Drawing.Color.White;
+            this.label34.Location = new System.Drawing.Point(288, 100);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(54, 18);
+            this.label34.TabIndex = 28;
+            this.label34.Text = "label34";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.label33.ForeColor = System.Drawing.Color.White;
+            this.label33.Location = new System.Drawing.Point(193, 100);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(54, 18);
+            this.label33.TabIndex = 27;
+            this.label33.Text = "label33";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.label32.ForeColor = System.Drawing.Color.White;
+            this.label32.Location = new System.Drawing.Point(98, 100);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(54, 18);
+            this.label32.TabIndex = 26;
+            this.label32.Text = "label32";
             // 
             // label24
             // 
@@ -427,9 +547,21 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "January";
             // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.label30.ForeColor = System.Drawing.Color.White;
+            this.label30.Location = new System.Drawing.Point(3, 100);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(54, 18);
+            this.label30.TabIndex = 25;
+            this.label30.Text = "label30";
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.btnDBV);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button1);
@@ -437,6 +569,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1501, 53);
             this.panel1.TabIndex = 1;
+            // 
+            // button5
+            // 
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(372, 0);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(128, 53);
+            this.button5.TabIndex = 3;
+            this.button5.Text = "Forecasting";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // btnDBV
             // 
@@ -458,7 +602,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(128, 53);
             this.button4.TabIndex = 1;
-            this.button4.Text = "Decision Analysis";
+            this.button4.Text = "Graphs";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -484,9 +628,9 @@
             this.pnlWaterPrice.Controls.Add(this.lblTier2);
             this.pnlWaterPrice.Controls.Add(this.lblTier1);
             this.pnlWaterPrice.Controls.Add(this.label27);
-            this.pnlWaterPrice.Location = new System.Drawing.Point(1306, 36);
+            this.pnlWaterPrice.Location = new System.Drawing.Point(1336, 36);
             this.pnlWaterPrice.Name = "pnlWaterPrice";
-            this.pnlWaterPrice.Size = new System.Drawing.Size(166, 348);
+            this.pnlWaterPrice.Size = new System.Drawing.Size(162, 348);
             this.pnlWaterPrice.TabIndex = 3;
             // 
             // numericUpDown1
@@ -568,12 +712,26 @@
             this.label27.TabIndex = 5;
             this.label27.Text = "Percentile Adjustment";
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(1301, -4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(29, 490);
+            this.button2.TabIndex = 5;
+            this.button2.Text = ">";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // label26
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.White;
-            this.label26.Location = new System.Drawing.Point(1302, 13);
+            this.label26.Location = new System.Drawing.Point(1332, 13);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(166, 20);
             this.label26.TabIndex = 3;
@@ -601,28 +759,14 @@
             this.label28.TabIndex = 4;
             this.label28.Text = "Avg. Dam Level";
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(1300, -2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(30, 490);
-            this.button2.TabIndex = 5;
-            this.button2.Text = ">";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // button3
             // 
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(1478, -2);
+            this.button3.Location = new System.Drawing.Point(1493, -4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(30, 490);
+            this.button3.Size = new System.Drawing.Size(34, 490);
             this.button3.TabIndex = 6;
             this.button3.Text = "<";
             this.button3.UseVisualStyleBackColor = true;
@@ -631,37 +775,45 @@
             // pnlDecision
             // 
             this.pnlDecision.BackColor = System.Drawing.Color.Gray;
-            this.pnlDecision.Controls.Add(this.predictedChart);
-            this.pnlDecision.Controls.Add(this.label29);
             this.pnlDecision.Controls.Add(this.numericUpDown2);
             this.pnlDecision.Controls.Add(this.label31);
-            this.pnlDecision.Controls.Add(this.lblCost);
-            this.pnlDecision.Controls.Add(this.lblPop);
+            this.pnlDecision.Controls.Add(this.predictedChart);
+            this.pnlDecision.Controls.Add(this.label29);
             this.pnlDecision.Location = new System.Drawing.Point(155, 192);
             this.pnlDecision.Name = "pnlDecision";
-            this.pnlDecision.Size = new System.Drawing.Size(666, 192);
+            this.pnlDecision.Size = new System.Drawing.Size(553, 189);
             this.pnlDecision.TabIndex = 7;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Location = new System.Drawing.Point(3, 10);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(169, 18);
+            this.label31.TabIndex = 9;
+            this.label31.Text = "Monthly Moving Average";
             // 
             // predictedChart
             // 
-            chartArea1.Name = "ChartArea1";
-            this.predictedChart.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.predictedChart.Legends.Add(legend1);
-            this.predictedChart.Location = new System.Drawing.Point(229, 6);
-            this.predictedChart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            chartArea2.Name = "ChartArea1";
+            this.predictedChart.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.predictedChart.Legends.Add(legend2);
+            this.predictedChart.Location = new System.Drawing.Point(2, 2);
+            this.predictedChart.Margin = new System.Windows.Forms.Padding(2);
             this.predictedChart.Name = "predictedChart";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.predictedChart.Series.Add(series1);
-            this.predictedChart.Size = new System.Drawing.Size(423, 184);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.predictedChart.Series.Add(series2);
+            this.predictedChart.Size = new System.Drawing.Size(493, 184);
             this.predictedChart.TabIndex = 8;
             this.predictedChart.Text = "chart1";
-            title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            title1.Name = "Title1";
-            title1.Text = "Predicted Rainfall";
-            this.predictedChart.Titles.Add(title1);
+            title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            title2.Name = "Title1";
+            title2.Text = "Predicted Rainfall";
+            this.predictedChart.Titles.Add(title2);
             // 
             // label29
             // 
@@ -674,170 +826,32 @@
             // 
             // numericUpDown2
             // 
-            this.numericUpDown2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown2.Location = new System.Drawing.Point(6, 160);
+            this.numericUpDown2.Location = new System.Drawing.Point(178, 10);
             this.numericUpDown2.Maximum = new decimal(new int[] {
-            -727379969,
-            232,
+            12,
+            0,
             0,
             0});
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(120, 24);
-            this.numericUpDown2.TabIndex = 3;
+            this.numericUpDown2.Size = new System.Drawing.Size(82, 20);
+            this.numericUpDown2.TabIndex = 10;
             this.numericUpDown2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.numericUpDown2_KeyUp);
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(3, 144);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(41, 13);
-            this.label31.TabIndex = 2;
-            this.label31.Text = "Budget";
-            // 
-            // lblCost
-            // 
-            this.lblCost.AutoSize = true;
-            this.lblCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCost.Location = new System.Drawing.Point(12, 42);
-            this.lblCost.Name = "lblCost";
-            this.lblCost.Size = new System.Drawing.Size(112, 18);
-            this.lblCost.TabIndex = 1;
-            this.lblCost.Text = "Cost(per Hour):";
-            // 
-            // lblPop
-            // 
-            this.lblPop.AutoSize = true;
-            this.lblPop.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPop.Location = new System.Drawing.Point(12, 12);
-            this.lblPop.Name = "lblPop";
-            this.lblPop.Size = new System.Drawing.Size(82, 18);
-            this.lblPop.TabIndex = 0;
-            this.lblPop.Text = "Population:";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(3, 100);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(41, 13);
-            this.label30.TabIndex = 25;
-            this.label30.Text = "label30";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(98, 100);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(41, 13);
-            this.label32.TabIndex = 26;
-            this.label32.Text = "label32";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(193, 100);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(41, 13);
-            this.label33.TabIndex = 27;
-            this.label33.Text = "label33";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(288, 100);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(41, 13);
-            this.label34.TabIndex = 28;
-            this.label34.Text = "label34";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(383, 100);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(41, 13);
-            this.label35.TabIndex = 29;
-            this.label35.Text = "label35";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(478, 100);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(41, 13);
-            this.label36.TabIndex = 30;
-            this.label36.Text = "label36";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(573, 100);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(41, 13);
-            this.label37.TabIndex = 31;
-            this.label37.Text = "label37";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(668, 100);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(41, 13);
-            this.label38.TabIndex = 32;
-            this.label38.Text = "label38";
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(763, 100);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(41, 13);
-            this.label39.TabIndex = 33;
-            this.label39.Text = "label39";
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(858, 100);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(41, 13);
-            this.label40.TabIndex = 34;
-            this.label40.Text = "label40";
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(953, 100);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(41, 13);
-            this.label41.TabIndex = 35;
-            this.label41.Text = "label41";
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(1048, 100);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(41, 13);
-            this.label42.TabIndex = 36;
-            this.label42.Text = "label42";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(1301, 441);
+            this.ClientSize = new System.Drawing.Size(1324, 441);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.pnlDecision);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.label28);
-            this.Controls.Add(this.label26);
             this.Controls.Add(this.pnlWaterPrice);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.label26);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -902,10 +916,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel pnlDecision;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label lblCost;
-        private System.Windows.Forms.Label lblPop;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Button btnDBV;
         private System.Windows.Forms.DataVisualization.Charting.Chart predictedChart;
@@ -921,6 +931,9 @@
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.NumericUpDown numericUpDown2;
     }
 }
 

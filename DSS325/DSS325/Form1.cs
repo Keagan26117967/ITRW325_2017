@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
+using Microsoft.VisualBasic;
 
 
 namespace DSS325
@@ -21,6 +22,7 @@ namespace DSS325
         public double[] avgRain;
         private double[] waterPrices;
         private bool decA = false;
+        private bool ForC = false;
         public double waterAvalible;
         private double cost, pumpWater;
 
@@ -34,10 +36,6 @@ namespace DSS325
             maxRainFall = new int[12];
             waterPrices = new double[5];
             avgRain = new double[13] { 0 ,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-            for(int y = 0; y < 13; y++)
-            {
-                avgDamLevel(y);
-            }
         }
 
         /*
@@ -48,6 +46,9 @@ namespace DSS325
                 //Here it should call on the class or method to get data of the rain.
             estimateTable();
             setWaterPriceNumbers();
+            predictedChart.Hide();
+            label31.Hide();
+            numericUpDown2.Hide();
             // MessageBox.Show(Convert.ToString(getRainFall(averageRainFall[i])));
         }
 
@@ -128,83 +129,83 @@ namespace DSS325
                 case 1:
                     i = 0;
                     List<double> Jan = new List<double> { Alex[i], Berg[i], Vil[i], Hely[i], Klein[i], Levis[i], SteenLow[i], SteenUp[i], ThreeWater[i], Victoria[i], Voel[i], Wemmer[i], Wood[i] };
-                    label30.Text = Convert.ToString(Jan.Average() + "%");
+                    label30.Text = Convert.ToString(Math.Round(Jan.Average(),2) + "%");
                     averageDamsLevel[i] = Jan.Average();
                     return  Jan.Average();                               //January
                     break;
                 case 2:
                     i = 1;
                     List<double> Feb = new List<double> { Alex[i], Berg[i], Vil[i], Hely[i], Klein[i], Levis[i], SteenLow[i], SteenUp[i], ThreeWater[i], Victoria[i], Voel[i], Wemmer[i], Wood[i] };
-                    label32.Text = Convert.ToString(Feb.Average() + "%");
+                    label32.Text = Convert.ToString(Math.Round(Feb.Average(),2) + "%");
                     averageDamsLevel[i] = Feb.Average();
                     return Feb.Average();          //February
                     break;
                 case 3:
                     i = 2;
                     List<double> Mar = new List<double> { Alex[i], Berg[i], Vil[i], Hely[i], Klein[i], Levis[i], SteenLow[i], SteenUp[i], ThreeWater[i], Victoria[i], Voel[i], Wemmer[i], Wood[i] };
-                    label33.Text = Convert.ToString(Mar.Average() + "%");
+                    label33.Text = Convert.ToString(Math.Round(Mar.Average(),2) + "%");
                     averageDamsLevel[i] = Mar.Average();
                     return Mar.Average();          //March
                     break;
                 case 4:
                     i = 3;
                     List<double> Apr = new List<double> { Alex[i], Berg[i], Vil[i], Hely[i], Klein[i], Levis[i], SteenLow[i], SteenUp[i], ThreeWater[i], Victoria[i], Voel[i], Wemmer[i], Wood[i] };
-                    label34.Text = Convert.ToString(Apr.Average() + "%");
+                    label34.Text = Convert.ToString(Math.Round(Apr.Average(),2) + "%");
                     averageDamsLevel[i] = Apr.Average();
                     return Apr.Average();          //April
                     break;
                 case 5:
                     i = 4;
                     List<double> May = new List<double> { Alex[i], Berg[i], Vil[i], Hely[i], Klein[i], Levis[i], SteenLow[i], SteenUp[i], ThreeWater[i], Victoria[i], Voel[i], Wemmer[i], Wood[i] };
-                    label35.Text = Convert.ToString(May.Average() + "%");
+                    label35.Text = Convert.ToString(Math.Round(May.Average(),2) + "%");
                     averageDamsLevel[i] = May.Average();
                     return May.Average();        //May
                     break;
                 case 6:
                     i = 5;
                     List<double> Jun = new List<double> { Alex[i], Berg[i], Vil[i], Hely[i], Klein[i], Levis[i], SteenLow[i], SteenUp[i], ThreeWater[i], Victoria[i], Voel[i], Wemmer[i], Wood[i] };
-                    label36.Text = Convert.ToString(Jun.Average() + "%");
+                    label36.Text = Convert.ToString(Math.Round(Jun.Average(),2) + "%");
                     averageDamsLevel[i] = Jun.Average();
                     return Jun.Average();       //June
                     break;
                 case 7:
                     i = 6;
                     List<double> Jul = new List<double> { Alex[i], Berg[i], Vil[i], Hely[i], Klein[i], Levis[i], SteenLow[i], SteenUp[i], ThreeWater[i], Victoria[i], Voel[i], Wemmer[i], Wood[i] };
-                    label37.Text = Convert.ToString(Jul.Average() + "%");
+                    label37.Text = Convert.ToString(Math.Round(Jul.Average(),2) + "%");
                     averageDamsLevel[i] = Jul.Average();
                     return Jul.Average();        //July
                     break;
                 case 8:
                     i = 7;
                     List<double> Aug = new List<double> { Alex[i], Berg[i], Vil[i], Hely[i], Klein[i], Levis[i], SteenLow[i], SteenUp[i], ThreeWater[i], Victoria[i], Voel[i], Wemmer[i], Wood[i] };
-                    label38.Text = Convert.ToString(Aug.Average() + "%");
+                    label38.Text = Convert.ToString(Math.Round(Aug.Average(),2) + "%");
                     averageDamsLevel[i] = Aug.Average();
                     return Aug.Average();        //August   
                     break;
                 case 9:
                     List<double> Sep = new List<double> { Alex[i], Berg[i], Vil[i], Hely[i], Klein[i], Levis[i], SteenLow[i], SteenUp[i], ThreeWater[i], Victoria[i], Voel[i], Wemmer[i], Wood[i] };
-                    label39.Text = Convert.ToString(Sep.Average() + "%");
+                    label39.Text = Convert.ToString(Math.Round(Sep.Average(),2) + "%");
                     averageDamsLevel[i] = Sep.Average();
                     return Sep.Average();         //September
                     break;
                 case 10:
                     i = 9;
                     List<double> Oct = new List<double> { Alex[i], Berg[i], Vil[i], Hely[i], Klein[i], Levis[i], SteenLow[i], SteenUp[i], ThreeWater[i], Victoria[i], Voel[i], Wemmer[i], Wood[i] };
-                    label40.Text = Convert.ToString(Oct.Average() + "%");
+                    label40.Text = Convert.ToString(Math.Round(Oct.Average(),2) + "%");
                     averageDamsLevel[i] = Oct.Average();
                     return Oct.Average();          //October
                     break;
                 case 11:
                     i = 10;
                     List<double> Nov = new List<double> { Alex[i], Berg[i], Vil[i], Hely[i], Klein[i], Levis[i], SteenLow[i], SteenUp[i], ThreeWater[i], Victoria[i], Voel[i], Wemmer[i], Wood[i] };
-                    label41.Text = Convert.ToString(Nov.Average() + "%");
+                    label41.Text = Convert.ToString(Math.Round(Nov.Average(),2) + "%");
                     averageDamsLevel[i] = Nov.Average();
                     return Nov.Average();          //November  
                     break;
                 case 12:
                     i = 11;
                     List<double> Dec = new List<double> { Alex[i], Berg[i], Vil[i], Hely[i], Klein[i], Levis[i], SteenLow[i], SteenUp[i], ThreeWater[i], Victoria[i], Voel[i], Wemmer[i], Wood[i] };
-                    label42.Text = Convert.ToString(Dec.Average() + "%");
+                    label42.Text = Convert.ToString(Math.Round(Dec.Average(),2) + "%");
                     averageDamsLevel[i] = Dec.Average();
                     return Dec.Average();          //December          
                     break;
@@ -215,7 +216,7 @@ namespace DSS325
 
 
         /*
-         * Assigns values between the min and max values 
+         * Assigns values between the min and max values                    //USE MIN MAX VALUES HERE
          */
          //Still needs to be updated because of the reading from a file thing.
         private double getRainFall(int iMonth)
@@ -275,7 +276,7 @@ namespace DSS325
                 maxRainFall[i] = max[i];
                 minRainFall[i] = max[i];
             }
-        }
+        }           //SET MIN MAX OVE HERE!!!!!!!!!!!!!!!!!!
 
         /*
          * Finds out what label it should write to 
@@ -359,6 +360,12 @@ namespace DSS325
                 }   
                 intToLabel(i).Text = (Convert.ToString(Math.Round(avgRain[i]/ 100000, 2)) + " " + "mm");
             }
+            label28.Text = "Predicted Rainfall";
+            label25.Text = "Avg. Dam Level";
+            for (int y = 0; y < 13; y++)
+            {
+                avgDamLevel(y);
+            }
 
             //Drawing chart
             string[] months = { "JAN", "FEB", "MAR", "APR", "", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "DEC" };
@@ -432,7 +439,7 @@ namespace DSS325
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Size = new Size(1524, 480);
+            this.Size = new Size(1540, 480);
             button2.Hide();
         }
 
@@ -445,27 +452,57 @@ namespace DSS325
         //Shows a panel for decision making
         private void button4_Click(object sender, EventArgs e)
         {
+            label31.Hide();
+            numericUpDown2.Hide();
+            ForC = false;
             if (decA == false)
             {
-                pnlDecision.Show();
-                DecisionAnalysis();
+                predictedChart.Show();
                 decA = true;
                 return;
             }
             if (decA == true)
             {
-                pnlDecision.Hide();
+                predictedChart.Hide();
                 decA = false;
                 return;
             }
         }
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+            predictedChart.Hide();
+            decA = false;
+            if (ForC == false)
+            {
+                label31.Show();
+                numericUpDown2.Show();
+                ForC = true;
+                return;
+            }
+            if (ForC == true)
+            {
+                label31.Hide();
+                numericUpDown2.Hide();
+                ForC = false;
+                return;
+            }
+
+        }
+
         private void numericUpDown2_KeyUp(object sender, KeyEventArgs e)
         {
-            Random Rndm = new Random();
-            pumpWater = ((double)numericUpDown2.Value / cost);
-            int pumpSpeed = Rndm.Next(150, 266);
-            label29.Text = Convert.ToString(Math.Round(pumpWater, 2)) + "       " + Convert.ToString(Math.Round(pumpWater*pumpSpeed, 2));
+            //Changes the estimated following years of the Rainfall and Dam Level
+            double[] MAArray = new double[12]; 
+            int MA = (int)numericUpDown2.Value;
+            for (int i = 1; i < 13; i++)
+            {
+                for (int j = 1; j < MA; j++)
+                {
+                    MAArray[i] = MAArray[i] + avgRain[j];
+                }
+                MAArray[i] = MAArray[i] / 12 ;
+            }
         }
 
         private void btnDBV_Click(object sender, EventArgs e)
@@ -474,27 +511,5 @@ namespace DSS325
             myDBSelect.Show();
         }
 
-        public void DecisionAnalysis()
-        {
-            Random Rndm = new Random();
-            int population = Rndm.Next(3665226, 3814826);
-            lblPop.Text = "Population:  " + Convert.ToString(population);
-            int kwH = Rndm.Next(184, 381);
-            cost = (kwH * 1.28) + (235);
-            lblCost.Text = "Cost(per Hour):  " + Convert.ToString(cost);
-        }
-
-        /*200mm offset 18%
-* Avg w pp * population = demand
-* if demand < supply
-* give advice
-* pump cost = R45
-* R1.24 Kilowatt/Hour
-* avg. station Kw/h = 282 offset 35%
-* Acquire threshold from others so it tells you it isn't possible you might need to upgrade pumps???
-* //////////////////////////////////////
-* 
-* 
-*/
     }
 }
