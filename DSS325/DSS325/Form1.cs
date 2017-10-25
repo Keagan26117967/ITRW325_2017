@@ -107,6 +107,78 @@ namespace DSS325
             return water;
         }
 
+        public double dayOfWater(int restrictionLevel)//In progress
+        {
+            for(int i = 0; i < 14; i++)
+            {
+                getDamLevel(i);
+            }
+
+            int population = 433688;
+            double allowance = 0;//liters of water per person;
+            double days;
+            switch(restrictionLevel)
+            {
+                case 1:
+                    allowance = 340; //Average use per person per day
+                    days = (waterAvalible * 1000000) / (population * allowance);
+                    label43.Text = Convert.ToString(days);
+                    return days;
+                    break;
+                case 2:
+                    allowance = 250;
+                    days = (waterAvalible * 1000000) / (population * allowance);
+                    label43.Text = Convert.ToString(days);
+                    days = waterAvalible / (population * allowance);
+                    return days;
+                    break;
+                case 3:
+                    allowance = 175;
+                    days = (waterAvalible * 1000000) / (population * allowance);
+                    label43.Text = Convert.ToString(days);
+                    return days;
+                    break;
+                case 4:
+                    allowance = 100;
+                    days = (waterAvalible * 1000000) / (population * allowance);
+                    label43.Text = Convert.ToString(days);
+                    return days;
+                    return 0;
+                    break;
+                case 5:
+                    allowance = 87;
+                    days = (waterAvalible * 1000000) / (population * allowance);
+                    label43.Text = Convert.ToString(days);
+                    return days;
+                    break;
+            }
+
+            return 0;
+        }
+        public double suggestedRestrictionLevel(double damLevel)//in progress
+        {
+            if(damLevel <= 75 && damLevel >= 65)
+            {
+                return dayOfWater(2);
+            }
+            else if(damLevel <= 65 && damLevel >= 50)
+            {
+                return dayOfWater(3);
+            }
+            else if(damLevel <= 50 && damLevel >= 30)
+            {
+                return dayOfWater(4);
+            }
+            else if(damLevel <= 30)
+            {
+                return dayOfWater(5);
+            }
+            else
+            {
+                return dayOfWater(1);
+            }
+        }
+
         public double avgDamLevel(int month)
         {
             int i = 0;
@@ -454,6 +526,7 @@ namespace DSS325
         private void button1_Click(object sender, EventArgs e)
         {
             estimateTable();
+            suggestedRestrictionLevel(32); // Test Data
         }
 
         /*
