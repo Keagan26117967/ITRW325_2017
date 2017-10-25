@@ -303,3 +303,10 @@ __pycache__/
 
 # OpenCover UI analysis results
 OpenCover/
+DSS325/DSS325/obj/Debug/DSS325\.csproj\.GenerateResource\.Cache
+
+DSS325/DSS325/obj/Debug/DSS325\.exe
+
+*.exe
+
+*.Cache
