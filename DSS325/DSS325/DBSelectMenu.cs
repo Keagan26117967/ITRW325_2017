@@ -17,7 +17,7 @@ namespace DSS325
         public DBSelectMenu()
         {
             InitializeComponent();
-            Filepath = "";
+            Filepath = Environment.CurrentDirectory + "/HydroCT.accdb";
         }
 
         private void btnDBV_Click(object sender, EventArgs e)
@@ -38,19 +38,16 @@ namespace DSS325
 
         private void selectDataSource()
         {
-            OpenFileDialog open = new OpenFileDialog();
-            open.Filter = "DB(.accdb)|*.accdb";
-            open.FilterIndex = 1;
-            open.InitialDirectory = Directory.GetCurrentDirectory();
-            open.Title = "Data Source";
-            open.ShowDialog();
-            Filepath = open.FileName;
+            //OpenFileDialog open = new OpenFileDialog();
+            //open.Filter = "DB(.accdb)|*.accdb";
+            //open.FilterIndex = 1;
+            //open.InitialDirectory = Directory.GetCurrentDirectory();
+            //open.Title = "Data Source";
+            //open.ShowDialog();
+            //Filepath = open.FileName;
         }
 
-        private void btnSelectDB_Click(object sender, EventArgs e)
-        {
-            selectDataSource();
-        }
+        
 
         private void btnDams_Click(object sender, EventArgs e)
         {
