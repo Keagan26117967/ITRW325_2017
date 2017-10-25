@@ -401,6 +401,33 @@ namespace DSS325
                 item.Label = Convert.ToString(value);
             }
 
+            ChartArea avgFirst = new ChartArea("Predicted_Rainfall");
+
+            avgFirst.AxisX.Title = "Months Of Year";
+            avgFirst.AxisY.Title = "%";
+            avgFirst.AxisX.MajorGrid.LineWidth = 0;
+            avgFirst.AxisY.MajorGrid.LineWidth = 0;
+            
+
+            averageChart.ChartAreas[0] = avgFirst;
+            Series avgSeries = new Series();
+            avgSeries.Points.DataBindXY(months, averageDamsLevel);
+
+            avgSeries.ChartType = SeriesChartType.Column;
+            avgSeries.Name = "Predicted Rainfall";
+
+            averageChart.Series[0] = (avgSeries);
+            averageChart.Series[0].Points.FindMaxByValue().Color = Color.Blue;
+            averageChart.Series[0].Points.FindMinByValue().Color = Color.Red;
+            averageChart.Dock = DockStyle.Fill;
+
+            foreach (DataPoint item in averageChart.Series[0].Points)
+            {
+                double[] values = item.YValues;
+                double value = values[0];
+                item.Label = Convert.ToString(value);
+            }
+
         }
 
         /*
