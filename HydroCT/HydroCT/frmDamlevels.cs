@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace HydroCT
 {
@@ -165,6 +166,8 @@ namespace HydroCT
             dgvForcasted.Rows.Add(casting.SimpleMovingAverage( October, sedNrPeriods.Value));
             dgvForcasted.Rows.Add(casting.SimpleMovingAverage( November, sedNrPeriods.Value));
             dgvForcasted.Rows.Add(casting.SimpleMovingAverage( December, sedNrPeriods.Value));
+
+            
         }
 
         private void setArrays()
@@ -210,6 +213,8 @@ namespace HydroCT
                     return;
                 }
             }
+
+
         }
 
         private void DoES()
@@ -218,20 +223,57 @@ namespace HydroCT
             dgvForcasted.Columns.Add(newName.ToString(), newName.ToString());
             double alpha1 = Convert.ToDouble(txtAlpha.Text);
             decimal alpha = Convert.ToDecimal(alpha1);
-            dgvForcasted.Rows.Add(casting.ExponentialSmoothing(January, alpha));
-            dgvForcasted.Rows.Add(casting.ExponentialSmoothing(February, alpha));
-            dgvForcasted.Rows.Add(casting.ExponentialSmoothing(March, alpha));
-            dgvForcasted.Rows.Add(casting.ExponentialSmoothing(April, alpha));
-            dgvForcasted.Rows.Add(casting.ExponentialSmoothing(May, alpha));
-            dgvForcasted.Rows.Add(casting.ExponentialSmoothing(June, alpha));
-            dgvForcasted.Rows.Add(casting.ExponentialSmoothing(July, alpha));
-            dgvForcasted.Rows.Add(casting.ExponentialSmoothing(August, alpha));
-            dgvForcasted.Rows.Add(casting.ExponentialSmoothing(September, alpha));
-            dgvForcasted.Rows.Add(casting.ExponentialSmoothing(October, alpha));
-            dgvForcasted.Rows.Add(casting.ExponentialSmoothing(November, alpha));
-            dgvForcasted.Rows.Add(casting.ExponentialSmoothing(December, alpha));
+            double[] forcastedArray = new double[12];
+            forcastedArray[0] = Convert.ToDouble(casting.ExponentialSmoothing(January, alpha));
+            forcastedArray[1] = Convert.ToDouble(casting.ExponentialSmoothing(February, alpha));
+            forcastedArray[2] = Convert.ToDouble(casting.ExponentialSmoothing(March, alpha));
+            forcastedArray[3] = Convert.ToDouble(casting.ExponentialSmoothing(April, alpha));
+            forcastedArray[4] = Convert.ToDouble(casting.ExponentialSmoothing(May, alpha));
+            forcastedArray[5] = Convert.ToDouble(casting.ExponentialSmoothing(June, alpha));
+            forcastedArray[6] = Convert.ToDouble(casting.ExponentialSmoothing(July, alpha));
+            forcastedArray[7] = Convert.ToDouble(casting.ExponentialSmoothing(August, alpha));
+            forcastedArray[8] = Convert.ToDouble(casting.ExponentialSmoothing(September, alpha));
+            forcastedArray[9] = Convert.ToDouble(casting.ExponentialSmoothing(October, alpha));
+            forcastedArray[10] = Convert.ToDouble(casting.ExponentialSmoothing(November, alpha));
+            forcastedArray[11] = Convert.ToDouble(casting.ExponentialSmoothing(December, alpha));
+           
+            foreach(double x in forcastedArray)
+            {
+                dgvForcasted.Rows.Add(x);
+            }
 
 
+            for (int x = 0; x < 12; x++)
+            {
+                forcastedArray[x] = Math.Round(forcastedArray[x], 2);
+            }
+            string[] months = { "JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC" };
+
+            ChartArea first = new ChartArea("Predicted_Rainfall");
+
+            first.AxisX.Title = "Months Of Year";
+            first.AxisY.Title = "mm";
+            first.AxisX.MajorGrid.LineWidth = 0;
+            first.AxisY.MajorGrid.LineWidth = 0;
+
+            forcastChart.ChartAreas[0] = first;
+            Series barSeries = new Series();
+            barSeries.Points.DataBindXY(months, forcastedArray);
+
+            barSeries.ChartType = SeriesChartType.Line;
+            barSeries.Name = "ES";
+
+            forcastChart.Series[0] = (barSeries);
+            forcastChart.Series[0].Points.FindMaxByValue().Color = Color.Blue;
+            forcastChart.Series[0].Points.FindMinByValue().Color = Color.Red;
+            forcastChart.Dock = DockStyle.Fill;
+
+            foreach (DataPoint item in forcastChart.Series[0].Points)
+            {
+                double[] values = item.YValues;
+                double value = values[0];
+                item.Label = Convert.ToString(value);
+            }
         }
 
         private void DoWMA()

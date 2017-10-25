@@ -497,7 +497,7 @@ namespace DSS325
             {
                 double[] values = item.YValues;
                 double value = values[0];
-                item.Label = Convert.ToString(value);
+                item.Label = Convert.ToString(Math.Round(value,2));
             }
 
         }
