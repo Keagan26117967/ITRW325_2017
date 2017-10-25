@@ -14,6 +14,7 @@ namespace DSS325
 {
     public partial class Form1 : Form
     {
+        public double[] averageDamsLevel = new double[12];
         private int[] averageRainFall;
         public int[] maxRainFall;
         public int[] minRainFall;
@@ -33,6 +34,10 @@ namespace DSS325
             maxRainFall = new int[12];
             waterPrices = new double[5];
             avgRain = new double[13] { 0 ,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+            for(int y = 0; y < 13; y++)
+            {
+                avgDamLevel(y);
+            }
         }
 
         /*
@@ -43,7 +48,6 @@ namespace DSS325
                 //Here it should call on the class or method to get data of the rain.
             estimateTable();
             setWaterPriceNumbers();
-            pnlDecision.Hide();
             // MessageBox.Show(Convert.ToString(getRainFall(averageRainFall[i])));
         }
 
@@ -124,60 +128,84 @@ namespace DSS325
                 case 1:
                     i = 0;
                     List<double> Jan = new List<double> { Alex[i], Berg[i], Vil[i], Hely[i], Klein[i], Levis[i], SteenLow[i], SteenUp[i], ThreeWater[i], Victoria[i], Voel[i], Wemmer[i], Wood[i] };
-                    return Jan.Average();                               //January
+                    label30.Text = Convert.ToString(Jan.Average() + "%");
+                    averageDamsLevel[i] = Jan.Average();
+                    return  Jan.Average();                               //January
                     break;
                 case 2:
                     i = 1;
                     List<double> Feb = new List<double> { Alex[i], Berg[i], Vil[i], Hely[i], Klein[i], Levis[i], SteenLow[i], SteenUp[i], ThreeWater[i], Victoria[i], Voel[i], Wemmer[i], Wood[i] };
+                    label32.Text = Convert.ToString(Feb.Average() + "%");
+                    averageDamsLevel[i] = Feb.Average();
                     return Feb.Average();          //February
                     break;
                 case 3:
                     i = 2;
                     List<double> Mar = new List<double> { Alex[i], Berg[i], Vil[i], Hely[i], Klein[i], Levis[i], SteenLow[i], SteenUp[i], ThreeWater[i], Victoria[i], Voel[i], Wemmer[i], Wood[i] };
+                    label33.Text = Convert.ToString(Mar.Average() + "%");
+                    averageDamsLevel[i] = Mar.Average();
                     return Mar.Average();          //March
                     break;
                 case 4:
                     i = 3;
                     List<double> Apr = new List<double> { Alex[i], Berg[i], Vil[i], Hely[i], Klein[i], Levis[i], SteenLow[i], SteenUp[i], ThreeWater[i], Victoria[i], Voel[i], Wemmer[i], Wood[i] };
+                    label34.Text = Convert.ToString(Apr.Average() + "%");
+                    averageDamsLevel[i] = Apr.Average();
                     return Apr.Average();          //April
                     break;
                 case 5:
                     i = 4;
                     List<double> May = new List<double> { Alex[i], Berg[i], Vil[i], Hely[i], Klein[i], Levis[i], SteenLow[i], SteenUp[i], ThreeWater[i], Victoria[i], Voel[i], Wemmer[i], Wood[i] };
+                    label35.Text = Convert.ToString(May.Average() + "%");
+                    averageDamsLevel[i] = May.Average();
                     return May.Average();        //May
                     break;
                 case 6:
                     i = 5;
                     List<double> Jun = new List<double> { Alex[i], Berg[i], Vil[i], Hely[i], Klein[i], Levis[i], SteenLow[i], SteenUp[i], ThreeWater[i], Victoria[i], Voel[i], Wemmer[i], Wood[i] };
+                    label36.Text = Convert.ToString(Jun.Average() + "%");
+                    averageDamsLevel[i] = Jun.Average();
                     return Jun.Average();       //June
                     break;
                 case 7:
                     i = 6;
                     List<double> Jul = new List<double> { Alex[i], Berg[i], Vil[i], Hely[i], Klein[i], Levis[i], SteenLow[i], SteenUp[i], ThreeWater[i], Victoria[i], Voel[i], Wemmer[i], Wood[i] };
+                    label37.Text = Convert.ToString(Jul.Average() + "%");
+                    averageDamsLevel[i] = Jul.Average();
                     return Jul.Average();        //July
                     break;
                 case 8:
                     i = 7;
                     List<double> Aug = new List<double> { Alex[i], Berg[i], Vil[i], Hely[i], Klein[i], Levis[i], SteenLow[i], SteenUp[i], ThreeWater[i], Victoria[i], Voel[i], Wemmer[i], Wood[i] };
+                    label38.Text = Convert.ToString(Aug.Average() + "%");
+                    averageDamsLevel[i] = Aug.Average();
                     return Aug.Average();        //August   
                     break;
                 case 9:
                     List<double> Sep = new List<double> { Alex[i], Berg[i], Vil[i], Hely[i], Klein[i], Levis[i], SteenLow[i], SteenUp[i], ThreeWater[i], Victoria[i], Voel[i], Wemmer[i], Wood[i] };
+                    label39.Text = Convert.ToString(Sep.Average() + "%");
+                    averageDamsLevel[i] = Sep.Average();
                     return Sep.Average();         //September
                     break;
                 case 10:
                     i = 9;
                     List<double> Oct = new List<double> { Alex[i], Berg[i], Vil[i], Hely[i], Klein[i], Levis[i], SteenLow[i], SteenUp[i], ThreeWater[i], Victoria[i], Voel[i], Wemmer[i], Wood[i] };
+                    label40.Text = Convert.ToString(Oct.Average() + "%");
+                    averageDamsLevel[i] = Oct.Average();
                     return Oct.Average();          //October
                     break;
                 case 11:
                     i = 10;
                     List<double> Nov = new List<double> { Alex[i], Berg[i], Vil[i], Hely[i], Klein[i], Levis[i], SteenLow[i], SteenUp[i], ThreeWater[i], Victoria[i], Voel[i], Wemmer[i], Wood[i] };
+                    label41.Text = Convert.ToString(Nov.Average() + "%");
+                    averageDamsLevel[i] = Nov.Average();
                     return Nov.Average();          //November  
                     break;
                 case 12:
                     i = 11;
                     List<double> Dec = new List<double> { Alex[i], Berg[i], Vil[i], Hely[i], Klein[i], Levis[i], SteenLow[i], SteenUp[i], ThreeWater[i], Victoria[i], Voel[i], Wemmer[i], Wood[i] };
+                    label42.Text = Convert.ToString(Dec.Average() + "%");
+                    averageDamsLevel[i] = Dec.Average();
                     return Dec.Average();          //December          
                     break;
             }
