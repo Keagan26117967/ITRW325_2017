@@ -20,6 +20,7 @@ namespace DSS325
         public double[] avgRain;
         private double[] waterPrices;
         private bool decA = false;
+        public double waterAvalible;
         private double cost, pumpWater;
 
         Random random = new Random();
@@ -45,6 +46,63 @@ namespace DSS325
             pnlDecision.Hide();
             // MessageBox.Show(Convert.ToString(getRainFall(averageRainFall[i])));
         }
+
+        private double getDamLevel(int dam)
+        {
+          switch(dam)
+            {
+                case 1://"Alexandra"
+                    return waterAva(134, 0.76);
+                    break;
+                case 2://"Berg_River"
+                    return waterAva(130010, 0.63);
+                    break;
+                case 3://"De_Villiers"
+                    return waterAva(242, 0.90);
+                    break;
+                case 4://"Hely_Hutchenson"
+                    return waterAva(925, 1.01);
+                    break;
+                case 5://"Kleinplaats"
+                    return waterAva(1301, 0.67);
+                    break;
+                case 6://"Lewis_Gay"
+                    return waterAva(168, 0.92);
+                    break;
+                case 7://"Steenbras_Lower"
+                    return waterAva(33517, 0.45);
+                    break;
+                case 8://"Steenbras_Upper"
+                    return waterAva(31767, 1);
+                    break;
+                case 9://"TheeWaterkloof"
+                    return waterAva(480188, 0.28);
+                    break;
+                case 10://"Victoria"
+                    return waterAva(128, 1.01);
+                    break;
+                case 11://"Voelvlei"
+                    return waterAva(164095, 0.26);
+                    break;
+                case 12://"Wemmerhoek"
+                    return waterAva(58644, 0.44);
+                    break;
+                case 13://"Woodhead"
+                    return waterAva(955, 0.91);
+                    break;
+
+            }
+            return 0;
+        }
+
+        public double waterAva(int cap, double level)
+        {
+            double water = cap * level;
+            waterAvalible += water;
+            return water;
+        }
+
+
 
         /*
          * Assigns values between the min and max values 
