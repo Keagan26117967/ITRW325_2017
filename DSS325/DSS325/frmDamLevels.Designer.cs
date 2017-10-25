@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnDBV = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cbxDams = new System.Windows.Forms.ComboBox();
             this.lblDamInfo = new System.Windows.Forms.Label();
@@ -36,18 +35,6 @@
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDamLevels)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnDBV
-            // 
-            this.btnDBV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDBV.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDBV.Location = new System.Drawing.Point(18, 504);
-            this.btnDBV.Name = "btnDBV";
-            this.btnDBV.Size = new System.Drawing.Size(270, 53);
-            this.btnDBV.TabIndex = 6;
-            this.btnDBV.Text = "Calculate MIN and MAX";
-            this.btnDBV.UseVisualStyleBackColor = true;
-            this.btnDBV.Click += new System.EventHandler(this.btnDBV_Click);
             // 
             // groupBox1
             // 
@@ -106,7 +93,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1050, 570);
-            this.Controls.Add(this.btnDBV);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmDamLevels";
             this.Text = "frmDamLevels";
@@ -118,8 +104,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnDBV;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label lblDamInfo;
         private System.Windows.Forms.DataGridView dgvDamLevels;

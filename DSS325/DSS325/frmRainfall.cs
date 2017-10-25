@@ -18,9 +18,6 @@ namespace DSS325
         OleDbDataAdapter adapter;
         OleDbConnection myDB;
 
-        public double[] arrRainfallMIN = new double[12];
-        public double[] arrRainfallMAX = new double[12];
-
         public frmRainfall()
         {
             InitializeComponent();
@@ -58,8 +55,6 @@ namespace DSS325
                     arr2d[x, i] = "" + dgvRainfall.Rows[x].Cells[i].Value;
             CalculateMinMaxArrays myCal = new CalculateMinMaxArrays();
             myCal.setMinMaxArrays(arr2d);
-            arrRainfallMIN = myCal.arrMIN;
-            arrRainfallMAX = myCal.arrMAX;
         }
     }
 }

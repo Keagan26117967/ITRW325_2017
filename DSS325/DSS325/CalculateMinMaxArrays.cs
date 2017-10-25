@@ -9,8 +9,9 @@ namespace DSS325
 {
     class CalculateMinMaxArrays
     {
-        public double[] arrMIN = new double[12];
-        public double[] arrMAX = new double[12];
+        public double[] arrRainfallMIN = new double[12];
+        public double[] arrRainfallMAX = new double[12];
+
         public void setMinMaxArrays(string[,] arr2d)
         {
 
@@ -36,16 +37,26 @@ namespace DSS325
                         temp = 0;
                     }
                 }
-                arrMIN[count] = min;
-                arrMAX[count] = max;
+                arrRainfallMIN[count] = min;
+                arrRainfallMAX[count] = max;
                 count++;
             }
             string concatenated = string.Join(",\n",
-                      arrMIN.Select(x => x.ToString()).ToArray());
-            MessageBox.Show("Min Values of dataset:\n" + concatenated);
+                      arrRainfallMIN.Select(x => x.ToString()).ToArray());
+            MessageBox.Show("This is for testing purposes Delete later \nMin Values of dataset:\n" + concatenated);
             string concatenated2 = string.Join(",\n",
-                      arrMAX.Select(x => x.ToString()).ToArray());
-            MessageBox.Show("Max Values of dataset:\n" + concatenated2);
+                      arrRainfallMAX.Select(x => x.ToString()).ToArray());
+            MessageBox.Show("This is for testing purposes Delete later \nMax Values of dataset:\n" + concatenated2);
+        }// end public setMinMaxArrays
+
+        public double[] getRainfallMin()
+        {
+            return arrRainfallMIN;
+        }
+
+        public double[] getRainfallMax()
+        {
+            return arrRainfallMAX;
         }
     }
 }
