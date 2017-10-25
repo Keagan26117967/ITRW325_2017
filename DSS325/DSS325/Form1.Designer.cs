@@ -54,6 +54,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pnlWaterPrice = new System.Windows.Forms.Panel();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
@@ -68,13 +69,13 @@
             this.label28 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.pnlDecision = new System.Windows.Forms.Panel();
-            this.lblPop = new System.Windows.Forms.Label();
-            this.lblCost = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.label29 = new System.Windows.Forms.Label();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.label31 = new System.Windows.Forms.Label();
+            this.lblCost = new System.Windows.Forms.Label();
+            this.lblPop = new System.Windows.Forms.Label();
+            this.btnDBV = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.pnlWaterPrice.SuspendLayout();
@@ -399,12 +400,25 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel1.Controls.Add(this.btnDBV);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Location = new System.Drawing.Point(-3, 390);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1501, 53);
             this.panel1.TabIndex = 1;
+            // 
+            // button4
+            // 
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(128, 0);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(128, 53);
+            this.button4.TabIndex = 1;
+            this.button4.Text = "Decision Analysis";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button1
             // 
@@ -572,18 +586,6 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
-            // 
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(128, 0);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(128, 53);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "Decision Analysis";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
             // pnlDecision
             // 
             this.pnlDecision.BackColor = System.Drawing.Color.Gray;
@@ -597,34 +599,14 @@
             this.pnlDecision.Size = new System.Drawing.Size(666, 192);
             this.pnlDecision.TabIndex = 7;
             // 
-            // lblPop
+            // label29
             // 
-            this.lblPop.AutoSize = true;
-            this.lblPop.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPop.Location = new System.Drawing.Point(12, 12);
-            this.lblPop.Name = "lblPop";
-            this.lblPop.Size = new System.Drawing.Size(82, 18);
-            this.lblPop.TabIndex = 0;
-            this.lblPop.Text = "Population:";
-            // 
-            // lblCost
-            // 
-            this.lblCost.AutoSize = true;
-            this.lblCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCost.Location = new System.Drawing.Point(12, 42);
-            this.lblCost.Name = "lblCost";
-            this.lblCost.Size = new System.Drawing.Size(112, 18);
-            this.lblCost.TabIndex = 1;
-            this.lblCost.Text = "Cost(per Hour):";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(3, 144);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(41, 13);
-            this.label31.TabIndex = 2;
-            this.label31.Text = "Budget";
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(132, 162);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(0, 18);
+            this.label29.TabIndex = 4;
             // 
             // numericUpDown2
             // 
@@ -640,14 +622,46 @@
             this.numericUpDown2.TabIndex = 3;
             this.numericUpDown2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.numericUpDown2_KeyUp);
             // 
-            // label29
+            // label31
             // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(132, 162);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(0, 18);
-            this.label29.TabIndex = 4;
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(3, 144);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(41, 13);
+            this.label31.TabIndex = 2;
+            this.label31.Text = "Budget";
+            // 
+            // lblCost
+            // 
+            this.lblCost.AutoSize = true;
+            this.lblCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCost.Location = new System.Drawing.Point(12, 42);
+            this.lblCost.Name = "lblCost";
+            this.lblCost.Size = new System.Drawing.Size(112, 18);
+            this.lblCost.TabIndex = 1;
+            this.lblCost.Text = "Cost(per Hour):";
+            // 
+            // lblPop
+            // 
+            this.lblPop.AutoSize = true;
+            this.lblPop.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPop.Location = new System.Drawing.Point(12, 12);
+            this.lblPop.Name = "lblPop";
+            this.lblPop.Size = new System.Drawing.Size(82, 18);
+            this.lblPop.TabIndex = 0;
+            this.lblPop.Text = "Population:";
+            // 
+            // btnDBV
+            // 
+            this.btnDBV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDBV.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDBV.Location = new System.Drawing.Point(253, 0);
+            this.btnDBV.Name = "btnDBV";
+            this.btnDBV.Size = new System.Drawing.Size(128, 53);
+            this.btnDBV.TabIndex = 2;
+            this.btnDBV.Text = "DB Viewer";
+            this.btnDBV.UseVisualStyleBackColor = true;
+            this.btnDBV.Click += new System.EventHandler(this.btnDBV_Click);
             // 
             // Form1
             // 
@@ -732,6 +746,7 @@
         private System.Windows.Forms.Label lblPop;
         private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Button btnDBV;
     }
 }
 

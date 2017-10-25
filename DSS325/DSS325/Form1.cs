@@ -256,6 +256,11 @@ namespace DSS325
             label29.Text = Convert.ToString(Math.Round(pumpWater, 2)) + "       " + Convert.ToString(Math.Round(pumpWater*pumpSpeed, 2));
         }
 
+        private void btnDBV_Click(object sender, EventArgs e)
+        {
+
+        }
+
         public void DecisionAnalysis()
         {
             Random Rndm = new Random();
