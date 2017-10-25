@@ -59,7 +59,7 @@
             this.groupBox1.Size = new System.Drawing.Size(1027, 486);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Rainfall for Cape Town in -mm-";
+            this.groupBox1.Text = "% Level of dam";
             // 
             // cbxDams
             // 
