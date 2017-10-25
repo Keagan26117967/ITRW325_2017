@@ -22,7 +22,18 @@ namespace DSS325
 
         private void btnDBV_Click(object sender, EventArgs e)
         {
+            if (Filepath == "")
+            {
+                MessageBox.Show("Please Select Data Source", "Select Data Source", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                selectDataSource();
 
+            }
+            else
+            {
+                frmRainfall rainfall = new frmRainfall(Filepath);
+                rainfall.Show();
+                this.Hide();
+            }
         }
 
         private void selectDataSource()
@@ -39,6 +50,21 @@ namespace DSS325
         private void btnSelectDB_Click(object sender, EventArgs e)
         {
             selectDataSource();
+        }
+
+        private void btnDams_Click(object sender, EventArgs e)
+        {
+            //if (Filepath == "")
+            //{
+            //    MessageBox.Show("Please Select Data Source", "Select Data Source", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //    selectDataSource();
+            //}
+            //else
+            //{
+            //    frmDamLevels damlevels = new frmDamLevels(Filepath);
+            //    damlevels.Show();
+            //    this.Hide();
+            //}
         }
     }
 }

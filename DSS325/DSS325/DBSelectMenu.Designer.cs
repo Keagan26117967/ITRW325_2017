@@ -28,36 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnDBV = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnRainfall = new System.Windows.Forms.Button();
+            this.btnDams = new System.Windows.Forms.Button();
             this.lblInfo = new System.Windows.Forms.Label();
             this.btnSelectDB = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // btnDBV
+            // btnRainfall
             // 
-            this.btnDBV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDBV.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDBV.Location = new System.Drawing.Point(12, 152);
-            this.btnDBV.Name = "btnDBV";
-            this.btnDBV.Size = new System.Drawing.Size(270, 53);
-            this.btnDBV.TabIndex = 3;
-            this.btnDBV.Text = "Rainfall";
-            this.btnDBV.UseVisualStyleBackColor = true;
-            this.btnDBV.Click += new System.EventHandler(this.btnDBV_Click);
+            this.btnRainfall.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRainfall.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRainfall.Location = new System.Drawing.Point(12, 152);
+            this.btnRainfall.Name = "btnRainfall";
+            this.btnRainfall.Size = new System.Drawing.Size(270, 53);
+            this.btnRainfall.TabIndex = 3;
+            this.btnRainfall.Text = "Rainfall";
+            this.btnRainfall.UseVisualStyleBackColor = true;
+            this.btnRainfall.Click += new System.EventHandler(this.btnDBV_Click);
             // 
-            // button1
+            // btnDams
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(13, 211);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(270, 53);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Dam Level";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnDams.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDams.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDams.Location = new System.Drawing.Point(13, 211);
+            this.btnDams.Name = "btnDams";
+            this.btnDams.Size = new System.Drawing.Size(270, 53);
+            this.btnDams.TabIndex = 4;
+            this.btnDams.Text = "Dam Level";
+            this.btnDams.UseVisualStyleBackColor = true;
+            this.btnDams.Click += new System.EventHandler(this.btnDams_Click);
             // 
             // lblInfo
             // 
@@ -110,8 +111,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnSelectDB);
             this.Controls.Add(this.lblInfo);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnDBV);
+            this.Controls.Add(this.btnDams);
+            this.Controls.Add(this.btnRainfall);
             this.Name = "DBSelectMenu";
             this.Text = "DBSelectMenu";
             this.ResumeLayout(false);
@@ -121,8 +122,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnDBV;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnRainfall;
+        private System.Windows.Forms.Button btnDams;
         private System.Windows.Forms.Label lblInfo;
         private System.Windows.Forms.Button btnSelectDB;
         private System.Windows.Forms.Label label2;

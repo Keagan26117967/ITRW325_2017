@@ -258,7 +258,8 @@ namespace DSS325
 
         private void btnDBV_Click(object sender, EventArgs e)
         {
-
+            DBSelectMenu myDBSelect = new DBSelectMenu();
+            myDBSelect.Show();
         }
 
         public void DecisionAnalysis()

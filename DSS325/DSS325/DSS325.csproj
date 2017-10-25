@@ -58,6 +58,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDamLevels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDamLevels.Designer.cs">
+      <DependentUpon>frmDamLevels.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRainfall.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDamLevels.resx">
+      <DependentUpon>frmDamLevels.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRainfall.resx">
       <DependentUpon>frmRainfall.cs</DependentUpon>
