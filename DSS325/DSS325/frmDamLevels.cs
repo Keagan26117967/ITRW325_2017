@@ -18,6 +18,9 @@ namespace DSS325
         OleDbDataAdapter adapter;
         OleDbConnection myDB;
 
+        public double[] arrDamLevelsMIN = new double[12];
+        public double[] arrDamLevelsMAX = new double[12];
+
         string Dam;
         public frmDamLevels()
         {
@@ -74,6 +77,18 @@ namespace DSS325
                 Dam = "Woodhead";
 
             RefreshDb();
+        }
+
+        private void btnDBV_Click(object sender, EventArgs e)
+        {
+            string[,] arr2d = new string[dgvDamLevels.Rows.Count, dgvDamLevels.Columns.Count];
+            for (int x = 0; x < arr2d.GetLength(0); x++)
+                for (int i = 0; i < arr2d.GetLength(1); i++)
+                    arr2d[x, i] = "" + dgvDamLevels.Rows[x].Cells[i].Value;
+            CalculateMinMaxArrays myCal = new CalculateMinMaxArrays();
+            myCal.setMinMaxArrays(arr2d);
+            arrDamLevelsMIN = myCal.arrMIN;
+            arrDamLevelsMAX = myCal.arrMAX;
         }
     }
 }

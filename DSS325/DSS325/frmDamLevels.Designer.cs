@@ -30,9 +30,9 @@
         {
             this.btnDBV = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbxDams = new System.Windows.Forms.ComboBox();
             this.lblDamInfo = new System.Windows.Forms.Label();
             this.dgvDamLevels = new System.Windows.Forms.DataGridView();
-            this.cbxDams = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDamLevels)).BeginInit();
             this.SuspendLayout();
@@ -47,6 +47,7 @@
             this.btnDBV.TabIndex = 6;
             this.btnDBV.Text = "Calculate MIN and MAX";
             this.btnDBV.UseVisualStyleBackColor = true;
+            this.btnDBV.Click += new System.EventHandler(this.btnDBV_Click);
             // 
             // groupBox1
             // 
@@ -59,6 +60,14 @@
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Rainfall for Cape Town in -mm-";
+            // 
+            // cbxDams
+            // 
+            this.cbxDams.FormattingEnabled = true;
+            this.cbxDams.Location = new System.Drawing.Point(89, 26);
+            this.cbxDams.Name = "cbxDams";
+            this.cbxDams.Size = new System.Drawing.Size(187, 21);
+            this.cbxDams.TabIndex = 2;
             // 
             // lblDamInfo
             // 
@@ -76,14 +85,6 @@
             this.dgvDamLevels.Name = "dgvDamLevels";
             this.dgvDamLevels.Size = new System.Drawing.Size(1002, 414);
             this.dgvDamLevels.TabIndex = 0;
-            // 
-            // cbxDams
-            // 
-            this.cbxDams.FormattingEnabled = true;
-            this.cbxDams.Location = new System.Drawing.Point(89, 26);
-            this.cbxDams.Name = "cbxDams";
-            this.cbxDams.Size = new System.Drawing.Size(187, 21);
-            this.cbxDams.TabIndex = 2;
             // 
             // frmDamLevels
             // 
