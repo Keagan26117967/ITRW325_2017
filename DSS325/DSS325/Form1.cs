@@ -46,7 +46,6 @@ namespace DSS325
                 //Here it should call on the class or method to get data of the rain.
             estimateTable();
             setWaterPriceNumbers();
-            predictedChart.Hide();
             // MessageBox.Show(Convert.ToString(getRainFall(averageRainFall[i])));
         }
 
