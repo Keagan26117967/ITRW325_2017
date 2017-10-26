@@ -45,7 +45,6 @@ namespace DSS325
         {
                 //Here it should call on the class or method to get data of the rain.
             estimateTable();
-            setWaterPriceNumbers();
             // MessageBox.Show(Convert.ToString(getRainFall(averageRainFall[i])));
         }
 
@@ -598,23 +597,6 @@ namespace DSS325
 
         }
 
-        /*
-         * Water prices are adjusted according to the numeric box
-         */
-        private void setWaterPriceNumbers()
-        {
-            double adjust = (double)numericUpDown1.Value;
-            waterPrices[0] = 16 + (16 * (adjust / 100));
-            waterPrices[1] = 18.97 + (18.97 * (adjust / 100));
-            waterPrices[2] = 25.26 + (25.26 * (adjust / 100));
-            waterPrices[3] = 38.97 + (38.97 * (adjust / 100));
-            waterPrices[4] = 45.86 + (45.86 * (adjust / 100));
-            lblTier1.Text = "< 9Kl          R" + Convert.ToString(Math.Round(waterPrices[0], 2));
-            lblTier2.Text = "9 - 25Kl       R" + Convert.ToString(Math.Round(waterPrices[1], 2));
-            lblTier3.Text = "25 - 30Kl      R" + Convert.ToString(Math.Round(waterPrices[2], 2));
-            lblTier4.Text = "30 - 40Kl      R" + Convert.ToString(Math.Round(waterPrices[3], 2));
-            lblTier5.Text = "> 40Kl         R" + Convert.ToString(Math.Round(waterPrices[4], 2));
-        }
 
         /*
          * When button1 is clicked
@@ -623,26 +605,6 @@ namespace DSS325
         {
             estimateTable();
             suggestedRestrictionLevel(32); // Test Data
-        }
-
-        /*
-         * Auto adjust the prices of water based on key releases, any other events do not read properly.
-         */
-        private void numericUpDown1_KeyUp(object sender, KeyEventArgs e)
-        {
-            setWaterPriceNumbers();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Size = new Size(1540, 480);
-            button2.Hide();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            this.Size = new Size(1340, 480);
-            button2.Show();
         }
 
         //Shows a panel for decision making
