@@ -605,7 +605,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 478);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1773, 65);
+            this.panel1.Size = new System.Drawing.Size(1774, 65);
             this.panel1.TabIndex = 1;
             // 
             // label43
@@ -816,14 +816,14 @@
             this.averageChart.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.averageChart.Legends.Add(legend1);
-            this.averageChart.Location = new System.Drawing.Point(850, 235);
+            this.averageChart.Location = new System.Drawing.Point(831, 235);
             this.averageChart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.averageChart.Name = "averageChart";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.averageChart.Series.Add(series1);
-            this.averageChart.Size = new System.Drawing.Size(857, 233);
+            this.averageChart.Size = new System.Drawing.Size(885, 233);
             this.averageChart.TabIndex = 8;
             this.averageChart.Text = "chart1";
             title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
@@ -837,14 +837,14 @@
             this.predictedChart.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.predictedChart.Legends.Add(legend2);
-            this.predictedChart.Location = new System.Drawing.Point(47, 235);
+            this.predictedChart.Location = new System.Drawing.Point(4, 235);
             this.predictedChart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.predictedChart.Name = "predictedChart";
             series2.ChartArea = "ChartArea1";
             series2.Legend = "Legend1";
             series2.Name = "Series1";
             this.predictedChart.Series.Add(series2);
-            this.predictedChart.Size = new System.Drawing.Size(780, 233);
+            this.predictedChart.Size = new System.Drawing.Size(809, 233);
             this.predictedChart.TabIndex = 8;
             this.predictedChart.Text = "chart1";
             title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
@@ -870,7 +870,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(1773, 543);
+            this.ClientSize = new System.Drawing.Size(1774, 543);
             this.Controls.Add(this.averageChart);
             this.Controls.Add(this.predictedChart);
             this.Controls.Add(this.lblPDA);
