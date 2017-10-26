@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title7 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title8 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label42 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
@@ -75,6 +75,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label43 = new System.Windows.Forms.Label();
             this.btnDBV = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -83,12 +84,11 @@
             this.averageChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.predictedChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.lblPDA = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.averageChart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.predictedChart)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -561,6 +561,16 @@
             this.panel1.Size = new System.Drawing.Size(1584, 65);
             this.panel1.TabIndex = 1;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(66, 66);
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
             // label43
             // 
             this.label43.AutoSize = true;
@@ -620,45 +630,45 @@
             // 
             // averageChart
             // 
-            chartArea7.Name = "ChartArea1";
-            this.averageChart.ChartAreas.Add(chartArea7);
-            legend7.Name = "Legend1";
-            this.averageChart.Legends.Add(legend7);
+            chartArea1.Name = "ChartArea1";
+            this.averageChart.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.averageChart.Legends.Add(legend1);
             this.averageChart.Location = new System.Drawing.Point(831, 235);
             this.averageChart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.averageChart.Name = "averageChart";
-            series7.ChartArea = "ChartArea1";
-            series7.Legend = "Legend1";
-            series7.Name = "Series1";
-            this.averageChart.Series.Add(series7);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.averageChart.Series.Add(series1);
             this.averageChart.Size = new System.Drawing.Size(885, 233);
             this.averageChart.TabIndex = 8;
             this.averageChart.Text = "chart1";
-            title7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            title7.Name = "Title1";
-            title7.Text = "Average Dam Level";
-            this.averageChart.Titles.Add(title7);
+            title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            title1.Name = "Title1";
+            title1.Text = "Average Dam Level";
+            this.averageChart.Titles.Add(title1);
             // 
             // predictedChart
             // 
-            chartArea8.Name = "ChartArea1";
-            this.predictedChart.ChartAreas.Add(chartArea8);
-            legend8.Name = "Legend1";
-            this.predictedChart.Legends.Add(legend8);
+            chartArea2.Name = "ChartArea1";
+            this.predictedChart.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.predictedChart.Legends.Add(legend2);
             this.predictedChart.Location = new System.Drawing.Point(4, 235);
             this.predictedChart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.predictedChart.Name = "predictedChart";
-            series8.ChartArea = "ChartArea1";
-            series8.Legend = "Legend1";
-            series8.Name = "Series1";
-            this.predictedChart.Series.Add(series8);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.predictedChart.Series.Add(series2);
             this.predictedChart.Size = new System.Drawing.Size(809, 233);
             this.predictedChart.TabIndex = 8;
             this.predictedChart.Text = "chart1";
-            title8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            title8.Name = "Title1";
-            title8.Text = "Predicted Rainfall";
-            this.predictedChart.Titles.Add(title8);
+            title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            title2.Name = "Title1";
+            title2.Text = "Predicted Rainfall";
+            this.predictedChart.Titles.Add(title2);
             this.predictedChart.Click += new System.EventHandler(this.predictedChart_Click);
             // 
             // lblPDA
@@ -671,16 +681,6 @@
             this.lblPDA.Size = new System.Drawing.Size(45, 18);
             this.lblPDA.TabIndex = 8;
             this.lblPDA.Text = "PDG:";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(66, 66);
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
@@ -698,15 +698,15 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Home";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.averageChart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.predictedChart)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

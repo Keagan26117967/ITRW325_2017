@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
@@ -84,7 +84,7 @@
             this.groupBox1.Controls.Add(this.cbxDams);
             this.groupBox1.Controls.Add(this.lblDamInfo);
             this.groupBox1.Controls.Add(this.dgvDamLevels);
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.ForeColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1210, 438);
@@ -214,24 +214,24 @@
             this.panel1.BackColor = System.Drawing.Color.DimGray;
             this.panel1.Controls.Add(this.forcastChart);
             this.panel1.Location = new System.Drawing.Point(818, 466);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(504, 211);
             this.panel1.TabIndex = 13;
             // 
             // forcastChart
             // 
-            chartArea2.Name = "ChartArea1";
-            this.forcastChart.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.forcastChart.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this.forcastChart.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.forcastChart.Legends.Add(legend1);
             this.forcastChart.Location = new System.Drawing.Point(2, 10);
-            this.forcastChart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.forcastChart.Margin = new System.Windows.Forms.Padding(2);
             this.forcastChart.Name = "forcastChart";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.forcastChart.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.forcastChart.Series.Add(series1);
             this.forcastChart.Size = new System.Drawing.Size(225, 244);
             this.forcastChart.TabIndex = 9;
             this.forcastChart.Text = "chart1";
@@ -402,7 +402,8 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox2);
             this.Name = "frmDamLevels";
-            this.Text = "frmDamLevels";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Dam Level Forecast";
             this.Load += new System.EventHandler(this.frmDamLevels_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
