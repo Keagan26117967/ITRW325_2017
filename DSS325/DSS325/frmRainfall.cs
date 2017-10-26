@@ -18,7 +18,7 @@ namespace DSS325
         public string conn = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source =";
         OleDbDataAdapter adapter;
         OleDbConnection myDB;
-
+        DBSelectMenu parentVar;
         Forecasting casting;
         int nr_columns;
         Decimal[] January, February, March, April, May, June, July, August, September, October,
@@ -82,6 +82,12 @@ namespace DSS325
                 item.Label = Convert.ToString(value);
             }
         }// End Of doES
+
+
+        public void SetParent(DBSelectMenu setParent)
+        {
+            parentVar = setParent;
+        }
 
         private void cbxFmethod_SelectedIndexChanged_1(object sender, EventArgs e)
         {
@@ -184,6 +190,12 @@ namespace DSS325
         private void frmRainfall_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            parentVar.Show();
+            this.Close();
         }
 
         private void cbxFmethod_SelectedIndexChanged(object sender, EventArgs e)

@@ -18,6 +18,7 @@ namespace DSS325
         public string conn = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source =";
         OleDbDataAdapter adapter;
         OleDbConnection myDB;
+        DBSelectMenu parentVar;
 
         string Dam;
         Forecasting casting;
@@ -118,6 +119,12 @@ namespace DSS325
             }
         }
 
+
+        public void SetParent(DBSelectMenu setParent)
+        {
+            parentVar = setParent;
+        }
+
         private void cbxFmethod_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cbxFmethod.SelectedIndex == 0)
@@ -170,6 +177,12 @@ namespace DSS325
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            parentVar.Show();
+            this.Close();
         }
 
         private void DoWMA()

@@ -28,10 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.dgvActual = new System.Windows.Forms.DataGridView();
             this.btnDBV = new System.Windows.Forms.Button();
             this.lblForcasted = new System.Windows.Forms.Label();
             this.dgvForcasted = new System.Windows.Forms.DataGridView();
@@ -53,10 +56,9 @@
             this.btnForcast = new System.Windows.Forms.Button();
             this.ForcastingMethod = new System.Windows.Forms.Label();
             this.cbxFmethod = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.dgvActual = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvActual)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvForcasted)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRainfall)).BeginInit();
             this.gbxWeights.SuspendLayout();
@@ -65,11 +67,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.forcastChart)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sedNrPeriods)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvActual)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.dgvActual);
@@ -84,6 +86,35 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Rainfall for Cape Town in -mm-";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(974, 384);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(149, 29);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "Draw on Graph";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(971, 14);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(40, 13);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "Actual:";
+            // 
+            // dgvActual
+            // 
+            this.dgvActual.AllowUserToDeleteRows = false;
+            this.dgvActual.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvActual.Location = new System.Drawing.Point(974, 41);
+            this.dgvActual.Name = "dgvActual";
+            this.dgvActual.Size = new System.Drawing.Size(149, 337);
+            this.dgvActual.TabIndex = 15;
             // 
             // btnDBV
             // 
@@ -191,17 +222,17 @@
             // 
             // forcastChart
             // 
-            chartArea9.Name = "ChartArea1";
-            this.forcastChart.ChartAreas.Add(chartArea9);
-            legend9.Name = "Legend1";
-            this.forcastChart.Legends.Add(legend9);
+            chartArea2.Name = "ChartArea1";
+            this.forcastChart.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.forcastChart.Legends.Add(legend2);
             this.forcastChart.Location = new System.Drawing.Point(2, 10);
             this.forcastChart.Margin = new System.Windows.Forms.Padding(2);
             this.forcastChart.Name = "forcastChart";
-            series9.ChartArea = "ChartArea1";
-            series9.Legend = "Legend1";
-            series9.Name = "Series1";
-            this.forcastChart.Series.Add(series9);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.forcastChart.Series.Add(series2);
             this.forcastChart.Size = new System.Drawing.Size(225, 244);
             this.forcastChart.TabIndex = 9;
             this.forcastChart.Text = "chart1";
@@ -307,34 +338,15 @@
             this.cbxFmethod.TabIndex = 4;
             this.cbxFmethod.SelectedIndexChanged += new System.EventHandler(this.cbxFmethod_SelectedIndexChanged_1);
             // 
-            // label3
+            // button2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(971, 14);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 13);
-            this.label3.TabIndex = 16;
-            this.label3.Text = "Actual:";
-            // 
-            // dgvActual
-            // 
-            this.dgvActual.AllowUserToDeleteRows = false;
-            this.dgvActual.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvActual.Location = new System.Drawing.Point(974, 41);
-            this.dgvActual.Name = "dgvActual";
-            this.dgvActual.Size = new System.Drawing.Size(149, 337);
-            this.dgvActual.TabIndex = 15;
-            // 
-            // button1
-            // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(974, 384);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(149, 29);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "Draw on Graph";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button2.Location = new System.Drawing.Point(282, 384);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(93, 29);
+            this.button2.TabIndex = 18;
+            this.button2.Text = "Back";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // frmRainfall
             // 
@@ -350,6 +362,7 @@
             this.Load += new System.EventHandler(this.frmRainfall_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvActual)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvForcasted)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRainfall)).EndInit();
             this.gbxWeights.ResumeLayout(false);
@@ -360,7 +373,6 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sedNrPeriods)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvActual)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -392,5 +404,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dgvActual;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label42 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
@@ -74,6 +74,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label43 = new System.Windows.Forms.Label();
             this.btnDBV = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pnlWaterPrice = new System.Windows.Forms.Panel();
@@ -90,19 +91,16 @@
             this.label28 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.pnlDecision = new System.Windows.Forms.Panel();
-            this.label43 = new System.Windows.Forms.Label();
             this.averageChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.label31 = new System.Windows.Forms.Label();
             this.predictedChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label29 = new System.Windows.Forms.Label();
+            this.lblPDA = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.pnlWaterPrice.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.pnlDecision.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.averageChart)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.predictedChart)).BeginInit();
             this.SuspendLayout();
             // 
@@ -566,35 +564,30 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
-
             this.panel1.Controls.Add(this.label43);
-
-
             this.panel1.Controls.Add(this.btnDBV);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 388);
             this.panel1.Name = "panel1";
-
-            this.panel1.Size = new System.Drawing.Size(1191, 53);
-            this.panel1.TabIndex = 1;
-            // 
-            // button5
-         
-            // 
-
             this.panel1.Size = new System.Drawing.Size(1330, 53);
             this.panel1.TabIndex = 1;
             // 
-
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(995, 53);
+            this.label43.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(41, 13);
+            this.label43.TabIndex = 11;
+            this.label43.Text = "label43";
+            // 
             // btnDBV
             // 
             this.btnDBV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDBV.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-
-            this.btnDBV.Location = new System.Drawing.Point(253, 0);
-        this.btnDBV.Location = new System.Drawing.Point(132, 0);
-
+            this.btnDBV.Location = new System.Drawing.Point(132, 0);
             this.btnDBV.Name = "btnDBV";
             this.btnDBV.Size = new System.Drawing.Size(128, 53);
             this.btnDBV.TabIndex = 2;
@@ -602,12 +595,6 @@
             this.btnDBV.UseVisualStyleBackColor = true;
             this.btnDBV.Click += new System.EventHandler(this.btnDBV_Click);
             // 
-
-            // button4
-            // 
-
-            // 
-
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -778,103 +765,57 @@
             // 
             this.pnlDecision.BackColor = System.Drawing.Color.Gray;
             this.pnlDecision.Controls.Add(this.averageChart);
-            this.pnlDecision.Controls.Add(this.numericUpDown2);
-            this.pnlDecision.Controls.Add(this.label31);
             this.pnlDecision.Controls.Add(this.predictedChart);
             this.pnlDecision.Controls.Add(this.label29);
             this.pnlDecision.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlDecision.Location = new System.Drawing.Point(0, 199);
             this.pnlDecision.Name = "pnlDecision";
-
-            this.pnlDecision.Size = new System.Drawing.Size(1191, 189);
-    this.pnlDecision.Size = new System.Drawing.Size(1330, 189);
-
+            this.pnlDecision.Size = new System.Drawing.Size(1330, 189);
             this.pnlDecision.TabIndex = 7;
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-
-            this.label43.Location = new System.Drawing.Point(505, 3);
-
-            this.label43.Location = new System.Drawing.Point(995, 53);
-
-            this.label43.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(41, 13);
-            this.label43.TabIndex = 11;
-            this.label43.Text = "label43";
             // 
             // averageChart
             // 
-            chartArea1.Name = "ChartArea1";
-            this.averageChart.ChartAreas.Add(chartArea1);
+            chartArea3.Name = "ChartArea1";
+            this.averageChart.ChartAreas.Add(chartArea3);
             this.averageChart.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend1.Name = "Legend1";
-            this.averageChart.Legends.Add(legend1);
+            legend3.Name = "Legend1";
+            this.averageChart.Legends.Add(legend3);
             this.averageChart.Location = new System.Drawing.Point(687, 0);
-            this.averageChart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.averageChart.Margin = new System.Windows.Forms.Padding(2);
             this.averageChart.Name = "averageChart";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.averageChart.Series.Add(series1);
-
-            this.averageChart.Size = new System.Drawing.Size(504, 189);
-
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.averageChart.Series.Add(series3);
             this.averageChart.Size = new System.Drawing.Size(643, 189);
-
             this.averageChart.TabIndex = 8;
             this.averageChart.Text = "chart1";
-            title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            title1.Name = "Title1";
-            title1.Text = "Average Dam Level";
-            this.averageChart.Titles.Add(title1);
-            // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.Location = new System.Drawing.Point(178, 10);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(82, 20);
-            this.numericUpDown2.TabIndex = 10;
-            this.numericUpDown2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.numericUpDown2_KeyUp);
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(3, 10);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(169, 18);
-            this.label31.TabIndex = 9;
-            this.label31.Text = "Monthly Moving Average";
+            title3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            title3.Name = "Title1";
+            title3.Text = "Average Dam Level";
+            this.averageChart.Titles.Add(title3);
             // 
             // predictedChart
             // 
-            chartArea2.Name = "ChartArea1";
-            this.predictedChart.ChartAreas.Add(chartArea2);
+            chartArea4.Name = "ChartArea1";
+            this.predictedChart.ChartAreas.Add(chartArea4);
             this.predictedChart.Dock = System.Windows.Forms.DockStyle.Left;
-            legend2.Name = "Legend1";
-            this.predictedChart.Legends.Add(legend2);
+            legend4.Name = "Legend1";
+            this.predictedChart.Legends.Add(legend4);
             this.predictedChart.Location = new System.Drawing.Point(0, 0);
-            this.predictedChart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.predictedChart.Margin = new System.Windows.Forms.Padding(2);
             this.predictedChart.Name = "predictedChart";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.predictedChart.Series.Add(series2);
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            this.predictedChart.Series.Add(series4);
             this.predictedChart.Size = new System.Drawing.Size(687, 189);
             this.predictedChart.TabIndex = 8;
             this.predictedChart.Text = "chart1";
-            title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            title2.Name = "Title1";
-            title2.Text = "Predicted Rainfall";
-            this.predictedChart.Titles.Add(title2);
+            title4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            title4.Name = "Title1";
+            title4.Text = "Predicted Rainfall";
+            this.predictedChart.Titles.Add(title4);
             // 
             // label29
             // 
@@ -885,16 +826,24 @@
             this.label29.Size = new System.Drawing.Size(0, 18);
             this.label29.TabIndex = 4;
             // 
+            // lblPDA
+            // 
+            this.lblPDA.AutoSize = true;
+            this.lblPDA.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPDA.ForeColor = System.Drawing.Color.White;
+            this.lblPDA.Location = new System.Drawing.Point(-3, 106);
+            this.lblPDA.Name = "lblPDA";
+            this.lblPDA.Size = new System.Drawing.Size(45, 18);
+            this.lblPDA.TabIndex = 8;
+            this.lblPDA.Text = "PDG:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-
-            this.ClientSize = new System.Drawing.Size(1191, 441);
-
             this.ClientSize = new System.Drawing.Size(1330, 441);
-
+            this.Controls.Add(this.lblPDA);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pnlDecision);
             this.Controls.Add(this.button3);
@@ -919,7 +868,6 @@
             this.pnlDecision.ResumeLayout(false);
             this.pnlDecision.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.averageChart)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.predictedChart)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -984,10 +932,9 @@
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.DataVisualization.Charting.Chart averageChart;
         private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label lblPDA;
     }
 }
 

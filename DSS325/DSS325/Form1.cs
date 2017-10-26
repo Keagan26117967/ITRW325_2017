@@ -47,8 +47,6 @@ namespace DSS325
             estimateTable();
             setWaterPriceNumbers();
             predictedChart.Hide();
-            label31.Hide();
-            numericUpDown2.Hide();
             // MessageBox.Show(Convert.ToString(getRainFall(averageRainFall[i])));
         }
 
@@ -442,6 +440,7 @@ namespace DSS325
             //Drawing chart
             string[] months = { "JAN", "FEB", "MAR", "APR", "", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "DEC" };
             double[] twelveAvg = new double[12]; //A version of avgRainfall with 12 spaces instead of 13
+            simulateDamIncrease();
             for (int i = 0; i < 12; i++)
             {
                 twelveAvg[i] = Math.Round(avgRain[i + 1]/100000,2);
@@ -502,6 +501,104 @@ namespace DSS325
 
         }
 
+        private double detectMonthReduction(int x)
+        {
+            if ((x > 0) && (x <= 4))
+            { return Math.Round(((random.NextDouble() * (0.23 - 0.05)) + 0.05), 2); }
+            if ((x > 4) && (x <= 8))
+            { return 0; }
+            if ((x > 8))
+            { return Math.Round(((random.NextDouble() * (0.23 - 0.05)) + 0.05), 2); }
+            return 0;
+        }
+
+        private void simulateDamIncrease()
+        {
+            double damChange = 0;
+            double PDA = 0;
+            for (int i = 1; i < 13; i++)
+            {
+                if (((avgRain[i]/100000) >= 1) && ((avgRain[i] / 100000) < 11))
+                {
+                    damChange = 0 - detectMonthReduction(i);
+                    PDA = PDA + damChange;
+                    intToLabel(i).Text = intToLabel(i).Text + " " + Convert.ToString(damChange) + "%";
+                }
+                else if (((avgRain[i] / 100000) > 12) && ((avgRain[i] / 100000) <= 20))
+                {
+                    damChange = Math.Round(((random.NextDouble() * (0.11 - 0.03)) + 0.03), 2) - detectMonthReduction(i);
+                    PDA = PDA + damChange;
+                    intToLabel(i).Text = intToLabel(i).Text + " " + Convert.ToString(damChange) + "%";
+                }
+                else if (((avgRain[i] / 100000) > 20) && ((avgRain[i] / 100000) <= 40))
+                {
+                    damChange = Math.Round(((random.NextDouble() * (0.13 - 0.03)) + 0.03), 2) - detectMonthReduction(i);
+                    PDA = PDA + (damChange/100);
+                    intToLabel(i).Text = intToLabel(i).Text + " " + Convert.ToString(damChange) + "%";
+                }
+                else if (((avgRain[i] / 100000) > 20) && ((avgRain[i] / 100000) <= 40))
+                {
+                    damChange = Math.Round(((random.NextDouble() * (0.19 - 0.06)) + 0.06), 2) - detectMonthReduction(i);
+                    PDA = PDA + damChange;
+                    intToLabel(i).Text = intToLabel(i).Text + " " + Convert.ToString(damChange) + "%";
+                }
+                else if (((avgRain[i] / 100000) > 40) && ((avgRain[i] / 100000) <= 65))
+                {
+                    damChange = Math.Round(((random.NextDouble() * (0.35 - 0.07)) + 0.07), 2) - detectMonthReduction(i);
+                    PDA = PDA + damChange;
+                    intToLabel(i).Text = intToLabel(i).Text + " " + Convert.ToString(damChange) + "%";
+                }
+                else if (((avgRain[i] / 100000) > 65) && ((avgRain[i] / 100000) <= 80))
+                {
+                    damChange = Math.Round(((random.NextDouble() * (0.71 - 0.1)) + 0.1), 2) - detectMonthReduction(i);
+                    PDA = PDA + damChange;
+                    intToLabel(i).Text = intToLabel(i).Text + " " + Convert.ToString(damChange) + "%";
+                }
+                else if (((avgRain[i] / 100000) > 80) && ((avgRain[i] / 100000) <= 100))
+                {
+                    damChange = Math.Round(((random.NextDouble() * (0.87 - 0.32)) + 0.32), 2) - detectMonthReduction(i);
+                    PDA = PDA + damChange;
+                    intToLabel(i).Text = intToLabel(i).Text + " " + Convert.ToString(damChange) + "%";
+                }
+                else if (((avgRain[i] / 100000) > 100) && ((avgRain[i] / 100000) <= 125))
+                {
+                    damChange = Math.Round(((random.NextDouble() * (0.89 - 0.34)) + 0.34), 2) - detectMonthReduction(i);
+                    PDA = PDA + damChange;
+                    intToLabel(i).Text = intToLabel(i).Text + " " + Convert.ToString(damChange) + "%";
+                }
+                else if (((avgRain[i] / 100000) > 125) && ((avgRain[i] / 100000) <= 140))
+                {
+                    damChange = Math.Round(((random.NextDouble() * (0.96 - 0.36)) + 0.36), 2) - detectMonthReduction(i);
+                    PDA = PDA + damChange;
+                    intToLabel(i).Text = intToLabel(i).Text + " " + Convert.ToString(damChange) + "%";
+                }
+                else if (((avgRain[i] / 100000) > 140) && ((avgRain[i] / 100000) <= 156))
+                {
+                    damChange = Math.Round(((random.NextDouble() * (1.01 - 0.37)) + 0.37), 2) - detectMonthReduction(i);
+                    PDA = PDA + damChange;
+                    intToLabel(i).Text = intToLabel(i).Text + " " + Convert.ToString(damChange) + "%";
+                }
+                else if (((avgRain[i] / 100000) > 156) && ((avgRain[i] / 100000) <= 160))
+                {
+                    damChange = Math.Round(((random.NextDouble() * (1.05 - 0.38))+0.38), 2) - detectMonthReduction(i);
+                    PDA = PDA + damChange;
+                    intToLabel(i).Text = intToLabel(i).Text + " " + Convert.ToString(damChange) + "%";
+                }
+                else if ((avgRain[i] / 100000) >= 160)
+                {
+                    damChange = Math.Round(((random.NextDouble() * (1.15 - 0.2)) + 0.2), 2) - detectMonthReduction(i);
+                    PDA = PDA + damChange;
+                    intToLabel(i).Text = intToLabel(i).Text + " " + Convert.ToString(damChange) + "%";
+                }
+                if (i == 10)
+                {
+                    intToLabel(i).Text = intToLabel(i).Text + " " + Convert.ToString(damChange) + "%";
+                }
+            }
+            lblPDA.Text = "PDG: " + Math.Round((PDA /12),2) + "%";
+
+        }
+
         /*
          * Water prices are adjusted according to the numeric box
          */
@@ -552,8 +649,6 @@ namespace DSS325
         //Shows a panel for decision making
         private void button4_Click(object sender, EventArgs e)
         {
-            label31.Hide();
-            numericUpDown2.Hide();
             ForC = false;
             if (decA == false)
             {
@@ -571,44 +666,15 @@ namespace DSS325
 
         private void button5_Click(object sender, EventArgs e)
         {
-            predictedChart.Hide();
-            decA = false;
-            if (ForC == false)
-            {
-                label31.Show();
-                numericUpDown2.Show();
-                ForC = true;
-                return;
-            }
-            if (ForC == true)
-            {
-                label31.Hide();
-                numericUpDown2.Hide();
-                ForC = false;
-                return;
-            }
 
-        }
-
-        private void numericUpDown2_KeyUp(object sender, KeyEventArgs e)
-        {
-            //Changes the estimated following years of the Rainfall and Dam Level
-            double[] MAArray = new double[12]; 
-            int MA = (int)numericUpDown2.Value;
-            for (int i = 1; i < 13; i++)
-            {
-                for (int j = 1; j < MA; j++)
-                {
-                    MAArray[i] = MAArray[i] + avgRain[j];
-                }
-                MAArray[i] = MAArray[i] / 12 ;
-            }
         }
 
         private void btnDBV_Click(object sender, EventArgs e)
         {
             DBSelectMenu myDBSelect = new DBSelectMenu();
+            myDBSelect.SetParent(this);
             myDBSelect.Show();
+
         }
 
     }

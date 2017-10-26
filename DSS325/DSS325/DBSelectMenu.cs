@@ -14,6 +14,7 @@ namespace DSS325
     public partial class DBSelectMenu : Form
     {
         string Filepath;
+        Form1 parentVar;
         public DBSelectMenu()
         {
             InitializeComponent();
@@ -31,9 +32,15 @@ namespace DSS325
             else
             {
                 frmRainfall rainfall = new frmRainfall(Filepath);
+                rainfall.SetParent(this);
                 rainfall.Show();
                 this.Hide();
             }
+        }
+
+        public void SetParent(Form1 setParent)
+        {
+            parentVar = setParent;
         }
 
         private void selectDataSource()
@@ -59,9 +66,16 @@ namespace DSS325
             else
             {
                 frmDamLevels damlevels = new frmDamLevels(Filepath);
+                damlevels.SetParent(this);
                 damlevels.Show();
                 this.Hide();
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            parentVar.Show();
         }
     }
 }
