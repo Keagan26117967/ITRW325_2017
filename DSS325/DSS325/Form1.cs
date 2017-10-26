@@ -31,6 +31,7 @@ namespace DSS325
         public Form1()
         {
             InitializeComponent();
+            WindowState = FormWindowState.Maximized;
             averageRainFall = new int[12] {1,2,3,4,5,6,7,8,9,10,11,12};
             minRainFall = new int[12];
             maxRainFall = new int[12];
