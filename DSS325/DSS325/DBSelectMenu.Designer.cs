@@ -36,54 +36,62 @@
             // 
             // btnRainfall
             // 
+            this.btnRainfall.BackColor = System.Drawing.Color.DimGray;
             this.btnRainfall.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRainfall.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRainfall.ForeColor = System.Drawing.Color.White;
             this.btnRainfall.Location = new System.Drawing.Point(13, 49);
             this.btnRainfall.Name = "btnRainfall";
             this.btnRainfall.Size = new System.Drawing.Size(270, 53);
             this.btnRainfall.TabIndex = 3;
             this.btnRainfall.Text = "Rainfall";
-            this.btnRainfall.UseVisualStyleBackColor = true;
+            this.btnRainfall.UseVisualStyleBackColor = false;
             this.btnRainfall.Click += new System.EventHandler(this.btnDBV_Click);
             // 
             // btnDams
             // 
+            this.btnDams.BackColor = System.Drawing.Color.DimGray;
             this.btnDams.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDams.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDams.ForeColor = System.Drawing.SystemColors.Control;
             this.btnDams.Location = new System.Drawing.Point(14, 108);
             this.btnDams.Name = "btnDams";
             this.btnDams.Size = new System.Drawing.Size(270, 53);
             this.btnDams.TabIndex = 4;
             this.btnDams.Text = "Dam Level";
-            this.btnDams.UseVisualStyleBackColor = true;
+            this.btnDams.UseVisualStyleBackColor = false;
             this.btnDams.Click += new System.EventHandler(this.btnDams_Click);
             // 
             // lblInfo
             // 
             this.lblInfo.AutoSize = true;
             this.lblInfo.Font = new System.Drawing.Font("Arial", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInfo.ForeColor = System.Drawing.Color.White;
             this.lblInfo.Location = new System.Drawing.Point(5, 5);
             this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(278, 41);
+            this.lblInfo.Size = new System.Drawing.Size(282, 41);
             this.lblInfo.TabIndex = 5;
-            this.lblInfo.Text = "Select database";
+            this.lblInfo.Text = "Select Database";
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.DimGray;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(13, 167);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(270, 53);
             this.button1.TabIndex = 6;
             this.button1.Text = "Back";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // DBSelectMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(297, 228);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblInfo);

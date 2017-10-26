@@ -36,6 +36,7 @@
             System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Title title8 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label42 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
@@ -82,15 +83,17 @@
             this.averageChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.predictedChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.lblPDA = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.averageChart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.predictedChart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.Gray;
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.DimGray;
             this.tableLayoutPanel1.ColumnCount = 12;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
@@ -547,7 +550,8 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label43);
             this.panel1.Controls.Add(this.btnDBV);
             this.panel1.Controls.Add(this.button1);
@@ -571,7 +575,7 @@
             // 
             this.btnDBV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDBV.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDBV.Location = new System.Drawing.Point(145, -1);
+            this.btnDBV.Location = new System.Drawing.Point(205, -1);
             this.btnDBV.Name = "btnDBV";
             this.btnDBV.Size = new System.Drawing.Size(137, 66);
             this.btnDBV.TabIndex = 2;
@@ -583,7 +587,7 @@
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(3, 0);
+            this.button1.Location = new System.Drawing.Point(65, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(146, 65);
             this.button1.TabIndex = 0;
@@ -596,7 +600,7 @@
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.Color.White;
-            this.label25.Location = new System.Drawing.Point(-4, 86);
+            this.label25.Location = new System.Drawing.Point(19, 86);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(133, 20);
             this.label25.TabIndex = 2;
@@ -607,11 +611,12 @@
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.Color.White;
-            this.label28.Location = new System.Drawing.Point(-4, 142);
+            this.label28.Location = new System.Drawing.Point(19, 147);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(119, 20);
             this.label28.TabIndex = 4;
             this.label28.Text = "Avg. Dam Level";
+            this.label28.Click += new System.EventHandler(this.label28_Click);
             // 
             // averageChart
             // 
@@ -661,17 +666,27 @@
             this.lblPDA.AutoSize = true;
             this.lblPDA.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPDA.ForeColor = System.Drawing.Color.White;
-            this.lblPDA.Location = new System.Drawing.Point(-3, 106);
+            this.lblPDA.Location = new System.Drawing.Point(20, 106);
             this.lblPDA.Name = "lblPDA";
             this.lblPDA.Size = new System.Drawing.Size(45, 18);
             this.lblPDA.TabIndex = 8;
             this.lblPDA.Text = "PDG:";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(66, 66);
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DimGray;
+            this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(1584, 543);
             this.Controls.Add(this.averageChart);
             this.Controls.Add(this.predictedChart);
@@ -691,6 +706,7 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.averageChart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.predictedChart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -744,6 +760,7 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart averageChart;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label lblPDA;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

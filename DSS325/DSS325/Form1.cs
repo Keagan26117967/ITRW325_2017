@@ -637,6 +637,11 @@ namespace DSS325
 
         }
 
+        private void label28_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnDBV_Click(object sender, EventArgs e)
         {
             DBSelectMenu myDBSelect = new DBSelectMenu();
