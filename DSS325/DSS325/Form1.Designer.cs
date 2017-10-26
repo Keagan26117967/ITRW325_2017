@@ -566,46 +566,35 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
-<<<<<<< Updated upstream
+
             this.panel1.Controls.Add(this.label43);
-            this.panel1.Controls.Add(this.button5);
-=======
->>>>>>> Stashed changes
+
+
             this.panel1.Controls.Add(this.btnDBV);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 388);
             this.panel1.Name = "panel1";
-<<<<<<< Updated upstream
+
             this.panel1.Size = new System.Drawing.Size(1191, 53);
             this.panel1.TabIndex = 1;
             // 
             // button5
+         
             // 
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(372, 0);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(128, 53);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "Forecasting";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-=======
+
             this.panel1.Size = new System.Drawing.Size(1330, 53);
             this.panel1.TabIndex = 1;
             // 
->>>>>>> Stashed changes
+
             // btnDBV
             // 
             this.btnDBV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDBV.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< Updated upstream
+
             this.btnDBV.Location = new System.Drawing.Point(253, 0);
-=======
-            this.btnDBV.Location = new System.Drawing.Point(132, 0);
->>>>>>> Stashed changes
+        this.btnDBV.Location = new System.Drawing.Point(132, 0);
+
             this.btnDBV.Name = "btnDBV";
             this.btnDBV.Size = new System.Drawing.Size(128, 53);
             this.btnDBV.TabIndex = 2;
@@ -613,21 +602,12 @@
             this.btnDBV.UseVisualStyleBackColor = true;
             this.btnDBV.Click += new System.EventHandler(this.btnDBV_Click);
             // 
-<<<<<<< Updated upstream
+
             // button4
             // 
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(128, 0);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(128, 53);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "Graphs";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+
             // 
-=======
->>>>>>> Stashed changes
+
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -805,21 +785,20 @@
             this.pnlDecision.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlDecision.Location = new System.Drawing.Point(0, 199);
             this.pnlDecision.Name = "pnlDecision";
-<<<<<<< Updated upstream
+
             this.pnlDecision.Size = new System.Drawing.Size(1191, 189);
-=======
-            this.pnlDecision.Size = new System.Drawing.Size(1330, 189);
->>>>>>> Stashed changes
+    this.pnlDecision.Size = new System.Drawing.Size(1330, 189);
+
             this.pnlDecision.TabIndex = 7;
             // 
             // label43
             // 
             this.label43.AutoSize = true;
-<<<<<<< Updated upstream
+
             this.label43.Location = new System.Drawing.Point(505, 3);
-=======
+
             this.label43.Location = new System.Drawing.Point(995, 53);
->>>>>>> Stashed changes
+
             this.label43.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(41, 13);
@@ -840,11 +819,11 @@
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.averageChart.Series.Add(series1);
-<<<<<<< Updated upstream
+
             this.averageChart.Size = new System.Drawing.Size(504, 189);
-=======
+
             this.averageChart.Size = new System.Drawing.Size(643, 189);
->>>>>>> Stashed changes
+
             this.averageChart.TabIndex = 8;
             this.averageChart.Text = "chart1";
             title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
@@ -911,11 +890,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-<<<<<<< Updated upstream
+
             this.ClientSize = new System.Drawing.Size(1191, 441);
-=======
+
             this.ClientSize = new System.Drawing.Size(1330, 441);
->>>>>>> Stashed changes
+
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pnlDecision);
             this.Controls.Add(this.button3);

@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dgvRainfall = new System.Windows.Forms.DataGridView();
             this.btnDBV = new System.Windows.Forms.Button();
             this.lblForcasted = new System.Windows.Forms.Label();
             this.dgvForcasted = new System.Windows.Forms.DataGridView();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvRainfall = new System.Windows.Forms.DataGridView();
             this.gbxWeights = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
@@ -53,38 +53,37 @@
             this.btnForcast = new System.Windows.Forms.Button();
             this.ForcastingMethod = new System.Windows.Forms.Label();
             this.cbxFmethod = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.dgvActual = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRainfall)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvForcasted)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRainfall)).BeginInit();
             this.gbxWeights.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvWeights)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.forcastChart)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sedNrPeriods)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvActual)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.dgvActual);
             this.groupBox1.Controls.Add(this.btnDBV);
             this.groupBox1.Controls.Add(this.lblForcasted);
             this.groupBox1.Controls.Add(this.dgvForcasted);
             this.groupBox1.Controls.Add(this.dgvRainfall);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1027, 419);
+            this.groupBox1.Size = new System.Drawing.Size(1197, 419);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Rainfall for Cape Town in -mm-";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
-            // dgvRainfall
-            // 
-            this.dgvRainfall.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRainfall.Location = new System.Drawing.Point(6, 41);
-            this.dgvRainfall.Name = "dgvRainfall";
-            this.dgvRainfall.Size = new System.Drawing.Size(760, 337);
-            this.dgvRainfall.TabIndex = 0;
             // 
             // btnDBV
             // 
@@ -117,11 +116,20 @@
             this.dgvForcasted.Name = "dgvForcasted";
             this.dgvForcasted.Size = new System.Drawing.Size(149, 337);
             this.dgvForcasted.TabIndex = 13;
+            this.dgvForcasted.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvForcasted_CellContentClick);
             // 
             // name
             // 
             this.name.HeaderText = "???";
             this.name.Name = "name";
+            // 
+            // dgvRainfall
+            // 
+            this.dgvRainfall.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRainfall.Location = new System.Drawing.Point(6, 41);
+            this.dgvRainfall.Name = "dgvRainfall";
+            this.dgvRainfall.Size = new System.Drawing.Size(760, 337);
+            this.dgvRainfall.TabIndex = 0;
             // 
             // gbxWeights
             // 
@@ -165,6 +173,7 @@
             this.dgvWeights.Name = "dgvWeights";
             this.dgvWeights.Size = new System.Drawing.Size(643, 60);
             this.dgvWeights.TabIndex = 8;
+            this.dgvWeights.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvWeights_CellContentClick);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -182,17 +191,17 @@
             // 
             // forcastChart
             // 
-            chartArea2.Name = "ChartArea1";
-            this.forcastChart.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.forcastChart.Legends.Add(legend2);
+            chartArea9.Name = "ChartArea1";
+            this.forcastChart.ChartAreas.Add(chartArea9);
+            legend9.Name = "Legend1";
+            this.forcastChart.Legends.Add(legend9);
             this.forcastChart.Location = new System.Drawing.Point(2, 10);
             this.forcastChart.Margin = new System.Windows.Forms.Padding(2);
             this.forcastChart.Name = "forcastChart";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.forcastChart.Series.Add(series2);
+            series9.ChartArea = "ChartArea1";
+            series9.Legend = "Legend1";
+            series9.Name = "Series1";
+            this.forcastChart.Series.Add(series9);
             this.forcastChart.Size = new System.Drawing.Size(225, 244);
             this.forcastChart.TabIndex = 9;
             this.forcastChart.Text = "chart1";
@@ -217,7 +226,7 @@
             // val
             // 
             this.val.AutoSize = true;
-            this.val.Location = new System.Drawing.Point(518, 57);
+            this.val.Location = new System.Drawing.Point(518, 46);
             this.val.Name = "val";
             this.val.Size = new System.Drawing.Size(94, 13);
             this.val.TabIndex = 11;
@@ -264,15 +273,17 @@
             0,
             0,
             0});
+            this.sedNrPeriods.ValueChanged += new System.EventHandler(this.sedNrPeriods_ValueChanged_1);
             // 
             // btnForcast
             // 
-            this.btnForcast.Location = new System.Drawing.Point(450, 93);
+            this.btnForcast.Location = new System.Drawing.Point(645, 19);
             this.btnForcast.Name = "btnForcast";
             this.btnForcast.Size = new System.Drawing.Size(75, 28);
             this.btnForcast.TabIndex = 6;
             this.btnForcast.Text = "Forcast";
             this.btnForcast.UseVisualStyleBackColor = true;
+            this.btnForcast.Click += new System.EventHandler(this.btnForcast_Click_1);
             // 
             // ForcastingMethod
             // 
@@ -294,6 +305,36 @@
             this.cbxFmethod.Name = "cbxFmethod";
             this.cbxFmethod.Size = new System.Drawing.Size(180, 21);
             this.cbxFmethod.TabIndex = 4;
+            this.cbxFmethod.SelectedIndexChanged += new System.EventHandler(this.cbxFmethod_SelectedIndexChanged_1);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(971, 14);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(40, 13);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "Actual:";
+            // 
+            // dgvActual
+            // 
+            this.dgvActual.AllowUserToDeleteRows = false;
+            this.dgvActual.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvActual.Location = new System.Drawing.Point(974, 41);
+            this.dgvActual.Name = "dgvActual";
+            this.dgvActual.Size = new System.Drawing.Size(149, 337);
+            this.dgvActual.TabIndex = 15;
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(974, 384);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(149, 29);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "Draw on Graph";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // frmRainfall
             // 
@@ -306,10 +347,11 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "frmRainfall";
             this.Text = "frmRainfall";
+            this.Load += new System.EventHandler(this.frmRainfall_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRainfall)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvForcasted)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRainfall)).EndInit();
             this.gbxWeights.ResumeLayout(false);
             this.gbxWeights.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvWeights)).EndInit();
@@ -318,6 +360,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sedNrPeriods)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvActual)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -346,5 +389,8 @@
         private System.Windows.Forms.Button btnForcast;
         private System.Windows.Forms.Label ForcastingMethod;
         private System.Windows.Forms.ComboBox cbxFmethod;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DataGridView dgvActual;
+        private System.Windows.Forms.Button button1;
     }
 }

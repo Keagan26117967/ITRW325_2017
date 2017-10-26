@@ -28,6 +28,7 @@ namespace DSS325
         private void btnForcast_Click(object sender, EventArgs e)
         {
             dgvForcasted.Rows.Clear();
+            dgvForcasted.Columns.Clear();
             if (cbxFmethod.SelectedIndex == 0)
             {
                 setArrays();
@@ -41,11 +42,20 @@ namespace DSS325
             if (cbxFmethod.SelectedIndex == 2)
             {
                 setArrays();
-                if (Convert.ToDecimal(txtAlpha.Text) >= 0 && Convert.ToDecimal(txtAlpha.Text) <= 1)
-                    DoES();
+                if (txtAlpha.Text != null || txtAlpha.Text != "")
+                {
+                    if (Convert.ToDecimal(txtAlpha.Text) >= 0 && Convert.ToDecimal(txtAlpha.Text) <= 1)
+                        DoES();
+                    else
+                    {
+                        MessageBox.Show("Please make sure Alpha is between 0 and 1", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                }
                 else
                 {
-                    MessageBox.Show("Please make sure Alpha is between 0 and 1", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Please make sure an Alpha value is inputted", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtAlpha.Focus();
                     return;
                 }
             }
@@ -147,10 +157,25 @@ namespace DSS325
             }
         }
 
+        private void dgvWeights_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgvDamLevels_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
         private void DoWMA()
         {
             int newName = Convert.ToInt32(dgvDamLevels.Columns[dgvDamLevels.ColumnCount - 1].Name) + 1;
-            dgvForcasted.Columns[0].HeaderText = newName.ToString();
+            dgvForcasted.Columns.Add(newName.ToString(), newName.ToString());
             Decimal[] weights = new Decimal[Convert.ToInt32(dgvDamLevels.ColumnCount)];
             try
             {
@@ -215,6 +240,7 @@ namespace DSS325
         private void sedNrPeriods_ValueChanged(object sender, EventArgs e)
         {
             dgvForcasted.Rows.Clear();
+            dgvForcasted.Columns.Clear();
             if (cbxFmethod.SelectedIndex == 0)
             {
                 setArrays();
@@ -251,6 +277,13 @@ namespace DSS325
             October = new Decimal[nr_columns];
             November = new Decimal[nr_columns];
             December = new Decimal[nr_columns];
+            int newName = Convert.ToInt32(dgvDamLevels.Columns[dgvDamLevels.ColumnCount - 1].Name) + 1;
+            dgvActual.Columns.Add(newName.ToString(), newName.ToString());
+            for (int i=0; i <=11; i++)
+            {
+                dgvActual.Rows.Add("0");
+            }
+            dgvActual.AllowUserToAddRows = false;
         }
 
         private void RefreshDb()
@@ -314,7 +347,7 @@ namespace DSS325
         private void DoSMF()
         {
             int newName = Convert.ToInt32(dgvDamLevels.Columns[dgvDamLevels.ColumnCount - 1].Name) + 1;
-            dgvForcasted.Columns[0].HeaderText = newName.ToString();
+            dgvForcasted.Columns.Add(newName.ToString(), newName.ToString());
             dgvForcasted.Rows.Add(casting.SimpleMovingAverage(January, sedNrPeriods.Value));
             dgvForcasted.Rows.Add(casting.SimpleMovingAverage(February, sedNrPeriods.Value));
             dgvForcasted.Rows.Add(casting.SimpleMovingAverage(March, sedNrPeriods.Value));
