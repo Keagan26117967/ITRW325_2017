@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title7 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title8 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label42 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
@@ -273,132 +273,132 @@
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.White;
             this.label24.Location = new System.Drawing.Point(1301, 50);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(49, 18);
+            this.label24.Size = new System.Drawing.Size(53, 20);
             this.label24.TabIndex = 24;
             this.label24.Text = "0,00m";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.Color.White;
             this.label23.Location = new System.Drawing.Point(1183, 50);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(49, 18);
+            this.label23.Size = new System.Drawing.Size(53, 20);
             this.label23.TabIndex = 23;
             this.label23.Text = "0,00m";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.White;
             this.label22.Location = new System.Drawing.Point(1065, 50);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(49, 18);
+            this.label22.Size = new System.Drawing.Size(53, 20);
             this.label22.TabIndex = 22;
             this.label22.Text = "0,00m";
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.White;
             this.label21.Location = new System.Drawing.Point(947, 50);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(49, 18);
+            this.label21.Size = new System.Drawing.Size(53, 20);
             this.label21.TabIndex = 21;
             this.label21.Text = "0,00m";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.White;
             this.label20.Location = new System.Drawing.Point(829, 50);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(49, 18);
+            this.label20.Size = new System.Drawing.Size(53, 20);
             this.label20.TabIndex = 20;
             this.label20.Text = "0,00m";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.White;
             this.label19.Location = new System.Drawing.Point(711, 50);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(49, 18);
+            this.label19.Size = new System.Drawing.Size(53, 20);
             this.label19.TabIndex = 19;
             this.label19.Text = "0,00m";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.White;
             this.label18.Location = new System.Drawing.Point(593, 50);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(49, 18);
+            this.label18.Size = new System.Drawing.Size(53, 20);
             this.label18.TabIndex = 18;
             this.label18.Text = "0,00m";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.White;
             this.label17.Location = new System.Drawing.Point(475, 50);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(49, 18);
+            this.label17.Size = new System.Drawing.Size(53, 20);
             this.label17.TabIndex = 17;
             this.label17.Text = "0,00m";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.White;
             this.label16.Location = new System.Drawing.Point(357, 50);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(49, 18);
+            this.label16.Size = new System.Drawing.Size(53, 20);
             this.label16.TabIndex = 16;
             this.label16.Text = "0,00m";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.White;
             this.label15.Location = new System.Drawing.Point(239, 50);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(49, 18);
+            this.label15.Size = new System.Drawing.Size(53, 20);
             this.label15.TabIndex = 15;
             this.label15.Text = "0,00m";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
             this.label14.Location = new System.Drawing.Point(121, 50);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(49, 18);
+            this.label14.Size = new System.Drawing.Size(53, 20);
             this.label14.TabIndex = 14;
             this.label14.Text = "0,00m";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
             this.label13.Location = new System.Drawing.Point(3, 50);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(49, 18);
+            this.label13.Size = new System.Drawing.Size(53, 20);
             this.label13.TabIndex = 13;
             this.label13.Text = "0,00m";
             // 
@@ -571,9 +571,9 @@
             // 
             this.btnDBV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDBV.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDBV.Location = new System.Drawing.Point(132, 0);
+            this.btnDBV.Location = new System.Drawing.Point(145, -1);
             this.btnDBV.Name = "btnDBV";
-            this.btnDBV.Size = new System.Drawing.Size(128, 53);
+            this.btnDBV.Size = new System.Drawing.Size(137, 66);
             this.btnDBV.TabIndex = 2;
             this.btnDBV.Text = "Forecast";
             this.btnDBV.UseVisualStyleBackColor = true;
@@ -585,7 +585,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(3, 0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(128, 53);
+            this.button1.Size = new System.Drawing.Size(146, 65);
             this.button1.TabIndex = 0;
             this.button1.Text = "Simulate Values";
             this.button1.UseVisualStyleBackColor = true;
@@ -615,45 +615,45 @@
             // 
             // averageChart
             // 
-            chartArea3.Name = "ChartArea1";
-            this.averageChart.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.averageChart.Legends.Add(legend3);
+            chartArea7.Name = "ChartArea1";
+            this.averageChart.ChartAreas.Add(chartArea7);
+            legend7.Name = "Legend1";
+            this.averageChart.Legends.Add(legend7);
             this.averageChart.Location = new System.Drawing.Point(831, 235);
             this.averageChart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.averageChart.Name = "averageChart";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.averageChart.Series.Add(series3);
+            series7.ChartArea = "ChartArea1";
+            series7.Legend = "Legend1";
+            series7.Name = "Series1";
+            this.averageChart.Series.Add(series7);
             this.averageChart.Size = new System.Drawing.Size(885, 233);
             this.averageChart.TabIndex = 8;
             this.averageChart.Text = "chart1";
-            title3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            title3.Name = "Title1";
-            title3.Text = "Average Dam Level";
-            this.averageChart.Titles.Add(title3);
+            title7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            title7.Name = "Title1";
+            title7.Text = "Average Dam Level";
+            this.averageChart.Titles.Add(title7);
             // 
             // predictedChart
             // 
-            chartArea4.Name = "ChartArea1";
-            this.predictedChart.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.predictedChart.Legends.Add(legend4);
+            chartArea8.Name = "ChartArea1";
+            this.predictedChart.ChartAreas.Add(chartArea8);
+            legend8.Name = "Legend1";
+            this.predictedChart.Legends.Add(legend8);
             this.predictedChart.Location = new System.Drawing.Point(4, 235);
             this.predictedChart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.predictedChart.Name = "predictedChart";
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.predictedChart.Series.Add(series4);
+            series8.ChartArea = "ChartArea1";
+            series8.Legend = "Legend1";
+            series8.Name = "Series1";
+            this.predictedChart.Series.Add(series8);
             this.predictedChart.Size = new System.Drawing.Size(809, 233);
             this.predictedChart.TabIndex = 8;
             this.predictedChart.Text = "chart1";
-            title4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            title4.Name = "Title1";
-            title4.Text = "Predicted Rainfall";
-            this.predictedChart.Titles.Add(title4);
+            title8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            title8.Name = "Title1";
+            title8.Text = "Predicted Rainfall";
+            this.predictedChart.Titles.Add(title8);
             this.predictedChart.Click += new System.EventHandler(this.predictedChart_Click);
             // 
             // lblPDA

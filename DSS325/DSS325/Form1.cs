@@ -46,6 +46,7 @@ namespace DSS325
         {
                 //Here it should call on the class or method to get data of the rain.
             estimateTable();
+            label43.Hide();
             // MessageBox.Show(Convert.ToString(getRainFall(averageRainFall[i])));
         }
 
@@ -521,77 +522,77 @@ namespace DSS325
                 {
                     damChange = 0 - detectMonthReduction(i);
                     PDA = PDA + damChange;
-                    intToLabel(i).Text = intToLabel(i).Text + " " + Convert.ToString(damChange) + "%";
+                    intToLabel(i).Text = intToLabel(i).Text + " \t" + Convert.ToString(damChange) + "%";
                 }
                 else if (((avgRain[i] / 100000) > 12) && ((avgRain[i] / 100000) <= 20))
                 {
                     damChange = Math.Round(((random.NextDouble() * (0.11 - 0.03)) + 0.03), 2) - detectMonthReduction(i);
                     PDA = PDA + damChange;
-                    intToLabel(i).Text = intToLabel(i).Text + " " + Convert.ToString(damChange) + "%";
+                    intToLabel(i).Text = intToLabel(i).Text + " \t" + Convert.ToString(damChange) + "%";
                 }
                 else if (((avgRain[i] / 100000) > 20) && ((avgRain[i] / 100000) <= 40))
                 {
                     damChange = Math.Round(((random.NextDouble() * (0.13 - 0.03)) + 0.03), 2) - detectMonthReduction(i);
                     PDA = PDA + (damChange/100);
-                    intToLabel(i).Text = intToLabel(i).Text + " " + Convert.ToString(damChange) + "%";
+                    intToLabel(i).Text = intToLabel(i).Text + " \t" + Convert.ToString(damChange) + "%";
                 }
                 else if (((avgRain[i] / 100000) > 20) && ((avgRain[i] / 100000) <= 40))
                 {
                     damChange = Math.Round(((random.NextDouble() * (0.19 - 0.06)) + 0.06), 2) - detectMonthReduction(i);
                     PDA = PDA + damChange;
-                    intToLabel(i).Text = intToLabel(i).Text + " " + Convert.ToString(damChange) + "%";
+                    intToLabel(i).Text = intToLabel(i).Text + " \t" + Convert.ToString(damChange) + "%";
                 }
                 else if (((avgRain[i] / 100000) > 40) && ((avgRain[i] / 100000) <= 65))
                 {
                     damChange = Math.Round(((random.NextDouble() * (0.35 - 0.07)) + 0.07), 2) - detectMonthReduction(i);
                     PDA = PDA + damChange;
-                    intToLabel(i).Text = intToLabel(i).Text + " " + Convert.ToString(damChange) + "%";
+                    intToLabel(i).Text = intToLabel(i).Text + " \t" + Convert.ToString(damChange) + "%";
                 }
                 else if (((avgRain[i] / 100000) > 65) && ((avgRain[i] / 100000) <= 80))
                 {
                     damChange = Math.Round(((random.NextDouble() * (0.71 - 0.1)) + 0.1), 2) - detectMonthReduction(i);
                     PDA = PDA + damChange;
-                    intToLabel(i).Text = intToLabel(i).Text + " " + Convert.ToString(damChange) + "%";
+                    intToLabel(i).Text = intToLabel(i).Text + " \t" + Convert.ToString(damChange) + "%";
                 }
                 else if (((avgRain[i] / 100000) > 80) && ((avgRain[i] / 100000) <= 100))
                 {
                     damChange = Math.Round(((random.NextDouble() * (0.87 - 0.32)) + 0.32), 2) - detectMonthReduction(i);
                     PDA = PDA + damChange;
-                    intToLabel(i).Text = intToLabel(i).Text + " " + Convert.ToString(damChange) + "%";
+                    intToLabel(i).Text = intToLabel(i).Text +  "\t" + Convert.ToString(damChange) + "%";
                 }
                 else if (((avgRain[i] / 100000) > 100) && ((avgRain[i] / 100000) <= 125))
                 {
                     damChange = Math.Round(((random.NextDouble() * (0.89 - 0.34)) + 0.34), 2) - detectMonthReduction(i);
                     PDA = PDA + damChange;
-                    intToLabel(i).Text = intToLabel(i).Text + " " + Convert.ToString(damChange) + "%";
+                    intToLabel(i).Text = intToLabel(i).Text + " \t" + Convert.ToString(damChange) + "%";
                 }
                 else if (((avgRain[i] / 100000) > 125) && ((avgRain[i] / 100000) <= 140))
                 {
                     damChange = Math.Round(((random.NextDouble() * (0.96 - 0.36)) + 0.36), 2) - detectMonthReduction(i);
                     PDA = PDA + damChange;
-                    intToLabel(i).Text = intToLabel(i).Text + " " + Convert.ToString(damChange) + "%";
+                    intToLabel(i).Text = intToLabel(i).Text + " \t" + Convert.ToString(damChange) + "%";
                 }
                 else if (((avgRain[i] / 100000) > 140) && ((avgRain[i] / 100000) <= 156))
                 {
                     damChange = Math.Round(((random.NextDouble() * (1.01 - 0.37)) + 0.37), 2) - detectMonthReduction(i);
-                    PDA = PDA + damChange;
-                    intToLabel(i).Text = intToLabel(i).Text + " " + Convert.ToString(damChange) + "%";
+                    PDA = PDA + damChange; 
+                    intToLabel(i).Text = intToLabel(i).Text + " \t" + Convert.ToString(damChange) + "%";
                 }
                 else if (((avgRain[i] / 100000) > 156) && ((avgRain[i] / 100000) <= 160))
                 {
                     damChange = Math.Round(((random.NextDouble() * (1.05 - 0.38))+0.38), 2) - detectMonthReduction(i);
                     PDA = PDA + damChange;
-                    intToLabel(i).Text = intToLabel(i).Text + " " + Convert.ToString(damChange) + "%";
+                    intToLabel(i).Text = intToLabel(i).Text + " \t" + Convert.ToString(damChange) + "%";
                 }
                 else if ((avgRain[i] / 100000) >= 160)
                 {
                     damChange = Math.Round(((random.NextDouble() * (1.15 - 0.2)) + 0.2), 2) - detectMonthReduction(i);
                     PDA = PDA + damChange;
-                    intToLabel(i).Text = intToLabel(i).Text + " " + Convert.ToString(damChange) + "%";
+                    intToLabel(i).Text = intToLabel(i).Text + " \t" + Convert.ToString(damChange) + "%";
                 }
                 if (i == 10)
                 {
-                    intToLabel(i).Text = intToLabel(i).Text + " " + Convert.ToString(damChange) + "%";
+                    intToLabel(i).Text = intToLabel(i).Text + " \t" + Convert.ToString(damChange) + "%";
                 }
             }
             lblPDA.Text = "PDG: " + Math.Round((PDA /12),2) + "%";
