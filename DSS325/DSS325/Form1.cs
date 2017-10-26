@@ -253,6 +253,7 @@ namespace DSS325
                     return Aug.Average();        //August   
                     break;
                 case 9:
+                    i = 8;
                     List<double> Sep = new List<double> { Alex[i], Berg[i], Vil[i], Hely[i], Klein[i], Levis[i], SteenLow[i], SteenUp[i], ThreeWater[i], Victoria[i], Voel[i], Wemmer[i], Wood[i] };
                     label39.Text = Convert.ToString(Math.Round(Sep.Average(),2) + "%");
                     averageDamsLevel[i] = Sep.Average();
