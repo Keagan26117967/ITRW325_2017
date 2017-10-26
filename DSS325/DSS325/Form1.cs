@@ -437,7 +437,7 @@ namespace DSS325
             }
 
             //Drawing chart
-            string[] months = { "JAN", "FEB", "MAR", "APR", "", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "DEC" };
+            string[] months = { "JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC" };
             double[] twelveAvg = new double[12]; //A version of avgRainfall with 12 spaces instead of 13
             simulateDamIncrease();
             for (int i = 0; i < 12; i++)

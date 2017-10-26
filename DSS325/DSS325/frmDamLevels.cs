@@ -19,7 +19,7 @@ namespace DSS325
         OleDbDataAdapter adapter;
         OleDbConnection myDB;
         DBSelectMenu parentVar;
-
+        string[] months = { "JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC" };
         string Dam;
         Forecasting casting;
         int nr_columns;
@@ -90,7 +90,7 @@ namespace DSS325
             {
                 forcastedArray[x] = Math.Round(forcastedArray[x], 2);
             }
-            string[] months = { "JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC" };
+            
 
             ChartArea first = new ChartArea("Predicted_Rainfall");
 
@@ -183,6 +183,63 @@ namespace DSS325
         {
             parentVar.Show();
             this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            double[] actualValues = new double[12];
+            double[] forcastedValues = new double[12];
+           
+            for(int i = 0; i<12; i++)
+            {
+                actualValues[i] = Convert.ToDouble(dgvActual[0,i].Value);
+            }
+
+            
+            Series barSeries = new Series();
+            barSeries.Points.DataBindXY(months, actualValues);
+
+            barSeries.ChartType = SeriesChartType.Line;
+            barSeries.Name = "Actual";
+
+            if(forcastChart.Series.Count != 2)
+            {
+                forcastChart.Series.Add(barSeries);
+            }else
+            {
+                forcastChart.Series[1] = barSeries;
+            }
+            
+            forcastChart.Series[1].Points.FindMaxByValue().Color = Color.Blue;
+            forcastChart.Series[1].Points.FindMinByValue().Color = Color.Red;
+
+            
+           
+            foreach(Series i in forcastChart.Series)
+                foreach (DataPoint item in i.Points)
+                {
+                    double[] values = item.YValues;
+                    double value = values[0];
+                    item.Label = Convert.ToString(value);
+                    item.LabelAngle = 45;
+                }
+            forcastChart.Invalidate();
+            int index = 0;
+            foreach (DataPoint item in forcastChart.Series[0].Points)
+            {
+                forcastedValues[index++] = item.YValues[0];
+            }
+
+            double squaredError = 0;
+
+            for(int i = 0; i<12; i++)
+            {
+                squaredError += Math.Pow(forcastedValues[i] - actualValues[i],2);
+            }
+
+            double mse = squaredError / 12;
+            label4.Text = "MSE: " + Math.Round(mse,2);
+
         }
 
         private void DoWMA()
