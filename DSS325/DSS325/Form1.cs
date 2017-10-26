@@ -463,7 +463,7 @@ namespace DSS325
             predictedChart.Series[0] = (barSeries);
             predictedChart.Series[0].Points.FindMaxByValue().Color = Color.Blue;
             predictedChart.Series[0].Points.FindMinByValue().Color = Color.Red;
-            predictedChart.Dock = DockStyle.Fill;
+            
 
             foreach (DataPoint item in predictedChart.Series[0].Points)
             {
@@ -485,12 +485,12 @@ namespace DSS325
             avgSeries.Points.DataBindXY(months, averageDamsLevel);
 
             avgSeries.ChartType = SeriesChartType.Column;
-            avgSeries.Name = "Predicted Rainfall";
+            avgSeries.Name = "Dam Level";
 
             averageChart.Series[0] = (avgSeries);
             averageChart.Series[0].Points.FindMaxByValue().Color = Color.Blue;
             averageChart.Series[0].Points.FindMinByValue().Color = Color.Red;
-            averageChart.Dock = DockStyle.Fill;
+            
 
             foreach (DataPoint item in averageChart.Series[0].Points)
             {
@@ -665,6 +665,11 @@ namespace DSS325
         }
 
         private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void predictedChart_Click(object sender, EventArgs e)
         {
 
         }
