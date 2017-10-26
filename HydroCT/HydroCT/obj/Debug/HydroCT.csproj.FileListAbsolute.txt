@@ -19,3 +19,4 @@ C:\Users\Vorster\Desktop\Repositories\ITRW325_2017\HydroCT\HydroCT\obj\Debug\Hyd
 C:\Users\Vorster\Desktop\Repositories\ITRW325_2017\HydroCT\HydroCT\obj\Debug\HydroCT.frmMain.resources
 C:\Users\Vorster\Desktop\Repositories\ITRW325_2017\HydroCT\HydroCT\obj\Debug\HydroCT.Properties.Resources.resources
 C:\Users\Vorster\Desktop\Repositories\ITRW325_2017\HydroCT\HydroCT\obj\Debug\HydroCT.csproj.GenerateResource.Cache
+C:\Users\Vorster\Desktop\Repositories\ITRW325_2017\HydroCT\HydroCT\obj\Debug\HydroCT.csprojResolveAssemblyReference.cache

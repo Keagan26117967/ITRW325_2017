@@ -54,6 +54,7 @@
     <Compile Include="DBSelectMenu.Designer.cs">
       <DependentUpon>DBSelectMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forecasting.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
