@@ -431,8 +431,8 @@ namespace DSS325
                 }   
                 intToLabel(i).Text = (Convert.ToString(Math.Round(avgRain[i]/ 100000, 2)) + " " + "mm");
             }
-            label28.Text = "Predicted Rainfall";
-            label25.Text = "Avg. Dam Level";
+            label28.Text = "Avg. Dam Level";
+            label25.Text = "Predicted Rainfall";
             for (int y = 0; y < 13; y++)
             {
                 avgDamLevel(y);
