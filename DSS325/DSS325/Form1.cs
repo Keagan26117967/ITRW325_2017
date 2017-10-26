@@ -122,33 +122,33 @@ namespace DSS325
                 case 1:
                     allowance = 340; //Average use per person per day
                     days = (waterAvalible * 1000000) / (population * allowance);
-                    label43.Text = Convert.ToString(days);
+                    label43.Text = Convert.ToString(Math.Round(days,2));
                     return days;
                     break;
                 case 2:
                     allowance = 250;
                     days = (waterAvalible * 1000000) / (population * allowance);
-                    label43.Text = Convert.ToString(days);
+                    label43.Text = Convert.ToString(Math.Round(days, 2));
                     days = waterAvalible / (population * allowance);
                     return days;
                     break;
                 case 3:
                     allowance = 175;
                     days = (waterAvalible * 1000000) / (population * allowance);
-                    label43.Text = Convert.ToString(days);
+                    label43.Text = Convert.ToString(Math.Round(days, 2));
                     return days;
                     break;
                 case 4:
                     allowance = 100;
                     days = (waterAvalible * 1000000) / (population * allowance);
-                    label43.Text = Convert.ToString(days);
+                    label43.Text = Convert.ToString(Math.Round(days, 2));
                     return days;
                     return 0;
                     break;
                 case 5:
                     allowance = 87;
                     days = (waterAvalible * 1000000) / (population * allowance);
-                    label43.Text = Convert.ToString(days);
+                    label43.Text = Convert.ToString(Math.Round(days, 2));
                     return days;
                     break;
             }
